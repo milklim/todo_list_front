@@ -8,8 +8,6 @@ import thunk from 'redux-thunk'
 import {Provider} from 'react-redux'
 import {Router, Route, browserHistory} from 'react-router'
 import {syncHistoryWithStore} from 'react-router-redux'
-// import App from './App';
-// import registerServiceWorker from './registerServiceWorker';
 
 import reducers from 'reducers'
 import Layout from 'containers/layout'
@@ -26,7 +24,6 @@ ReactDOM.render(
         <Router history={history}>
             <Route component={Layout}>
                 <Route path='/' component={Tasklists} />
-
             </Route>
         </Router>
     </Provider>,
