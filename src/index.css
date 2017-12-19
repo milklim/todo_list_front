@@ -7,3 +7,7 @@ body {
 .task-list {
   border: 1px solid #9c9c9c;
 }
+
+.task-list-header {
+  background: azure;
+}
