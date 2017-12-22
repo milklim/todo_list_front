@@ -9,5 +9,10 @@ body {
 }
 
 .task-list-header {
-  background: azure;
+  font-weight: bold;
+  font-size: 120%;
+}
+
+.task-list-header span {
+  margin-right: 10px;
 }
