@@ -57,15 +57,17 @@
     margin-right: 5px;
     margin-top: 0;
     color:#27ae60;
-}
+}       
 
 .task-item .task-edit-btns {
-    width: 130px;
+    width: 150px;
     height: 100%;
     color: darkgray;
-    padding: 0;
-    margin-left: 20px;
+    padding-top: 6px;
+    margin-left: 0;
     font-size: 20px;
+    text-align: center;
+
 }
 
 .task-item .task-content {
@@ -85,6 +87,9 @@
     display: inline-block;
     margin-top: 7px;
 }
+.arrow-up:hover {
+    border-bottom-color: black
+}
 
 .arrow-down {
     width: 0;
@@ -93,4 +98,7 @@
     border-right: 5px solid transparent;
     border-top: 5px solid darkgray;
     display: inline-block;
+}
+.arrow-down:hover {
+    border-top-color: black
 }
