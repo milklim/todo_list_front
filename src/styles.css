@@ -102,3 +102,7 @@
 .arrow-down:hover {
     border-top-color: black
 }
+
+.line-through-text {
+    text-decoration: line-through;
+}
