@@ -1,79 +1,92 @@
 .w3-content {
-    max-width: 800px;
+max-width: 800px;
+}
+
+.hide {
+    visibility: hidden;
 }
 
 .w3-check {
-    height: 20px;
+height: 20px;
 }
 
 .lst-container {
-    padding: 0;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+padding: 0;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
 }
 
 .lst-container .lst-header .lst-icon-main {
-    margin-top: 2px;
-    padding-right: 5px;
-    color:rgb(60, 60, 60);
+margin-top: 2px;
+padding-right: 5px;
+color:rgb(60, 60, 60);
 }
 
 .lst-container .lst-header .lst-icon-edit {
-    color:rgb(135, 177, 226);
-    padding-right: 12px;
+color:rgb(135, 177, 226);
+padding-right: 10px;
+padding-left: 10px;
 }
 
 
 .add-task-section .lst-icon-main {
-    width:40px;
-    margin-left: 10px;
-    margin-top: 2px;
-    color:#27ae60;
+width:40px;
+margin-left: 10px;
+margin-top: 2px;
+color:#27ae60;
 }
 
 .add-task-section, .task-item {
-    height: 58px;
+height: 58px;
 }
 
 .add-task-section button {
-    width: 140px;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
+width: 140px;
+border-top-right-radius: 6px;
+border-bottom-right-radius: 6px;
 }
 
 .add-task-section input, .add-task-section button {
-    margin-top: 10px;
+margin-top: 10px;
 }
 
 .add-task-section .btn-wrapper {
-    width: 150px;
+width: 150px;
 }
 
 
 .task-item .done-checkbox {
-    width:45px;
-    height: 100%;
-    margin-left: 0;
-    margin-right: 5px;
-    margin-top: 0;
-    color:#27ae60;
-}       
+width:45px;
+height: 100%;
+margin-left: 0;
+margin-right: 5px;
+margin-top: 0;
+color:#27ae60;
+}
 
 .task-item .task-edit-btns {
-    width: 150px;
-    height: 100%;
-    color: darkgray;
-    padding-top: 6px;
-    margin-left: 0;
-    font-size: 20px;
-    text-align: center;
+width: 150px;
+height: 100%;
+color: darkgray;
+padding-top: 6px;
+margin-left: 0;
+font-size: 20px;
+text-align: center;
 
 }
 
 .task-item .task-content {
-    height: 100%;
-    padding-left: 10px;
-    color: grey;
+height: 100%;
+padding-left: 10px;
+padding-right: 10px;
+color: grey;
+}
+
+
+.task-item .task-content .editField {
+    color: dimgray;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 
