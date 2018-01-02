@@ -88,6 +88,13 @@ color: grey;
     padding-top: 2px;
     padding-bottom: 2px;
 }
+.lst-header .editField {
+    color: dimgray;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
 
 
 .arrow-up {
