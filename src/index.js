@@ -13,7 +13,9 @@ import {syncHistoryWithStore} from 'react-router-redux'
 import reducers from 'reducers'
 import Layout from 'containers/layout'
 import Tasklists from 'components/tasklists'
-import Auth from 'components/auth'
+import SignUp from 'components/signUp'
+import SignIn from 'components/signIn'
+import SignOut from 'components/signOut'
 
 const store = createStore(reducers, composeWithDevTools(
     applyMiddleware(thunk)
@@ -25,7 +27,9 @@ ReactDOM.render(
     <Provider store={store}>
         <Router history={history}>
             <Route component={Layout}>
-                <Route path='/sign_in' component={Auth}/>
+                <Route path='/sign_up' component={SignUp}/>
+                <Route path='/sign_in' component={SignIn}/>
+                <Route path='/sign_out' component={SignOut}/>
                 <Route path='/' component={Tasklists} />
             </Route>
         </Router>
