@@ -126,3 +126,9 @@ color: grey;
 .line-through-text {
     text-decoration: line-through;
 }
+
+.sign-forms {
+    width: 400px;
+    margin-top: 50px;
+    margin-left: 200px;
+}
