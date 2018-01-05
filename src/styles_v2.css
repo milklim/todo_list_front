@@ -1,0 +1,141 @@
+.lst-container {
+    margin-bottom: 25px;
+}
+.lst-container, .lst-last-item {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+/* Header of the List */
+.lst-header {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.lst-header .lst-title {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.lst-header .lst-icon {
+    visibility: hidden;
+}
+.lst-header .editField {
+    color: dimgray;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+
+/* Add task section */
+.lst-add-task-section {
+    background-color: #d9d9d9;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.lst-add-task-section form {
+    padding-right: 0;
+}
+.lst-add-task-section .lst-input-wrapper {
+    padding: 0;
+    width: 82%;
+}
+.lst-add-task-section .lst-input-wrapper input[type=text] {
+    height: 35px;
+}
+.lst-add-task-section .lst-btn {
+    width: 18%;
+    padding: 0;
+}
+.lst-add-task-section button {
+    width: 100%;
+    height: 35px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.lst-icon {
+    width: 1%;
+    padding: 0;
+    color: #b3b3b3;
+}
+
+.lst-icon-main {
+    width: 1%;
+    font-size: 28px;
+    padding: 0;
+    /*padding-left: 2px;*/
+    color: #404040;
+}
+
+/* Task item section */
+.lst-task-item:hover {
+    background-color: #ffffe6;
+}
+.lst-task-item:hover .lst-icon, .lst-header:hover .lst-icon {
+    visibility: visible;
+}
+.lst-task-item .lst-icon {
+    width: 6%;
+    visibility: hidden;
+}
+.lst-task-item .checkbox-wraper {
+    width: 20px;
+}
+.lst-task-item .checkbox-wraper input[type=checkbox]{
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+}
+.lst-divide-cell {
+    width: 6px;
+}
+.lst-taskcontent {
+    text-align: justify;
+    font-size: 16px;
+}
+.lst-task-item .editField {
+    color: dimgray;
+    font-size: 15px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.arrow-up {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid darkgray;
+    display: inline-block;
+    margin-top: 7px;
+}
+.arrow-up:hover {
+    border-bottom-color: black
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid darkgray;
+    display: inline-block;
+}
+.arrow-down:hover {
+    border-top-color: black
+}
+
+.line-through-text {
+    text-decoration: line-through;
+}
+
+.sign-forms {
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 25%;
+}
