@@ -4,7 +4,7 @@ import {Link} from 'react-router'
 
 import {
     userSignOut
-} from '../../actions'
+} from '../../actions/index'
 
 
 class Layout extends Component {
