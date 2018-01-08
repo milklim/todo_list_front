@@ -1,19 +1,23 @@
 import React from 'react';
+import {Provider} from 'react-redux';
 // import  ReactDOM from 'react-dom';
-import Enzyme, {shallow} from 'enzyme';
+import Enzyme, {shallow, mount} from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
 import Tasklists from '../components/tasklists';
+import store from '../store';
 
 Enzyme.configure({adapter: new Adapter});
 
 describe('### Tasklists tests', () => {
 
-    const component = shallow(<Tasklists/>);
+    test('test with Provider', () => {
+        const component = mount(
+            <Provider store={store}>
+                <Tasklists/>
+            </Provider>
+        )
 
-    it('has h1 header-tag', () => {
-        const h1_tag = component.find('h1');
-        expect(h1_tag).toHaveLength(1);
     })
 })
 
