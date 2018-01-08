@@ -48,7 +48,7 @@ import {
     USER_SIGN_OUT_SUCCESS,
     USER_SIGN_OUT_FAILURE
 
-} from 'actionTypes'
+} from '../actionTypes'
 
 import {
     fetchLists as fetchListsApi,
@@ -66,7 +66,7 @@ import {
     signIn as signInApi,
     signOut as signOutApi,
 
-} from 'api'
+} from '../api'
 
 
 export const fetchLists = () => async dispatch => {

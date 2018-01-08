@@ -1,18 +1,18 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 
-import TasksOfList from 'components/tasksOfList'
-import NewTaskSection from 'components/newTaskSection'
-import ListHeader from 'components/listHeader'
+import TasksOfList from '../tasksOfList'
+import NewTaskSection from '../newTaskSection'
+import ListHeader from '../listHeader'
 import {
     fetchLists,
     createList,
     deleteList,
-} from 'actions'
+} from '../../actions'
 
 import {
     getLists
-} from 'selectors'
+} from '../../selectors'
 
 class Tasklists extends Component {
 

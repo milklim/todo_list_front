@@ -6,10 +6,10 @@ import {
     onEditListFinish,
     deleteList,
     updateList,
-} from 'actions'
+} from '../../actions'
 import {
     getEditingList,
-} from 'selectors'
+} from '../../selectors'
 
 
 class ListHeader extends Component {

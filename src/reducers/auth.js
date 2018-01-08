@@ -6,7 +6,7 @@ import {
     USER_SIGN_IN_SUCCESS,
     USER_SIGN_IN_FAILURE,
     USER_SIGN_OUT_SUCCESS,
-} from 'actionTypes'
+} from '../actionTypes'
 
 
 const initialState = {

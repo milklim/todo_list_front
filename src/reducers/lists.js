@@ -2,7 +2,7 @@ import {
     FETCH_LISTS_SUCCESS,
     LIST_CREATE_SUCCESS,
     LIST_DELETE_SUCCESS,
-} from 'actionTypes'
+} from '../actionTypes'
 
 const initialState = []
 

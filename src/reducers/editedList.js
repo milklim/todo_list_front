@@ -1,7 +1,7 @@
 import {
     LIST_EDIT_START,
     LIST_EDIT_FINISH,
-} from 'actionTypes'
+} from '../actionTypes'
 
 
 const initialState = {}

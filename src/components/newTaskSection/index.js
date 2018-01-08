@@ -4,7 +4,7 @@ import {connect} from "react-redux";
 import {
     createTask,
     fetchListTasks
-} from 'actions'
+} from '../../actions'
 
 class NewTaskSection extends Component{
     constructor(props) {

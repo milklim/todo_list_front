@@ -4,9 +4,9 @@ import {browserHistory} from "react-router";
 
 import {
     userSignIn
-} from 'actions'
+} from '../../actions'
 
-import {getAuthInfo} from "selectors";
+import {getAuthInfo} from "../../selectors";
 
 class SignIn extends Component {
     constructor(props){

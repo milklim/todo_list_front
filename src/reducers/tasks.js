@@ -6,7 +6,7 @@ import {
     TASK_POSITION_DOWN_SUCCESS,
     TASK_TOGGLE_DONE_STATUS_SUCCESS,
     USER_SIGN_OUT_SUCCESS,
-} from 'actionTypes'
+} from '../actionTypes'
 
 const initialState = []
 

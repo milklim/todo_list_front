@@ -1,4 +1,4 @@
-import {getCookie, setAuthCookies, removeAuthCookies} from 'cookies'
+import {getCookie, setAuthCookies, removeAuthCookies} from '../cookies'
 
 const axios = require('axios')
 // const baseUrl = 'http://localhost:3000/'

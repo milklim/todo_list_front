@@ -1,7 +1,7 @@
 import {
     TASK_EDIT_START,
     TASK_EDIT_FINISH,
-} from 'actionTypes'
+} from '../actionTypes'
 
 
 const initialState = {}

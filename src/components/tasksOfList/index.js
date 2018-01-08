@@ -12,12 +12,12 @@ import {
     taskPositionDown,
     onEditTaskStart,
     onEditTaskFinish
-} from 'actions'
+} from '../../actions'
 
 import {
     getTasksOfList,
     getEditingTask,
-} from "selectors";
+} from "../../selectors";
 
 
 class TasksOfList extends Component {

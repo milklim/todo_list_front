@@ -10,12 +10,12 @@ import {Provider} from 'react-redux'
 import {Router, Route, browserHistory} from 'react-router'
 import {syncHistoryWithStore} from 'react-router-redux'
 
-import reducers from 'reducers'
-import Layout from 'containers/layout'
-import AuthenticatedWrapper from 'containers/authenticatedWrapper'
-import Tasklists from 'components/tasklists'
-import SignUp from 'components/signUp'
-import SignIn from 'components/signIn'
+import reducers from './reducers'
+import Layout from './containers/layout'
+import AuthenticatedWrapper from './containers/authenticatedWrapper'
+import Tasklists from './components/tasklists'
+import SignUp from './components/signUp'
+import SignIn from './components/signIn'
 
 const store = createStore(reducers, composeWithDevTools(
     applyMiddleware(thunk)
