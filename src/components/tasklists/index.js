@@ -14,7 +14,7 @@ import {
     getLists
 } from '../../selectors'
 
-class Tasklists extends Component {
+export class Tasklists extends Component {
 
     componentDidMount () {
         this.props.fetchLists()

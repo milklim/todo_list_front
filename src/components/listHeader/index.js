@@ -12,7 +12,7 @@ import {
 } from '../../selectors'
 
 
-class ListHeader extends Component {
+export class ListHeader extends Component {
     constructor(props) {
         super(props)
         this.state = {isEditing: false}
@@ -73,15 +73,15 @@ class ListHeader extends Component {
                     </div>
 
                     <div className="w3-container w3-cell w3-cell-middle w3-xlarge w3-hover-text-dark-grey lst-icon">
-                        <i className="fa fa-pencil"
+                        <i className="fa fa-pencil btn-edit"
                            onClick={this.editList.bind(this, list)}
                         ></i>
                     </div>
-                    <div className="w3-container w3-cell w3-cell-middle w3-padding w3-xlarge lst-icon">
+                    <div className="w3-container w3-cell w3-cell-middle w3-padding w3-xlarge lst-icon-divider">
                         <i className="fa">|</i>
                     </div>
                     <div className="w3-container w3-cell w3-cell-middle w3-xlarge w3-hover-text-deep-orange lst-icon">
-                        <i className="fa fa-trash-o"
+                        <i className="fa fa-trash-o btn-delete"
                            onClick={this.deleteList.bind(this, list.id)}
                         ></i>
                     </div>

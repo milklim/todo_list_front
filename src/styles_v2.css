@@ -16,7 +16,7 @@
     padding-left: 16px;
     padding-right: 16px;
 }
-.lst-header .lst-icon {
+.lst-header .lst-icon, .lst-icon-divider {
     visibility: hidden;
 }
 .lst-header .editField {
@@ -58,7 +58,7 @@
     border-bottom-right-radius: 6px;
 }
 
-.lst-icon {
+.lst-icon, .lst-icon-divider {
     width: 1%;
     padding: 0;
     color: #b3b3b3;
@@ -76,7 +76,7 @@
 .lst-task-item:hover {
     background-color: #ffffe6;
 }
-.lst-task-item:hover .lst-icon, .lst-header:hover .lst-icon {
+.lst-task-item:hover .lst-icon, .lst-header:hover .lst-icon, .lst-header:hover .lst-icon-divider {
     visibility: visible;
 }
 .lst-task-item .lst-icon {
