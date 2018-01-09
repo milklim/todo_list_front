@@ -1,7 +1,7 @@
 import React from 'react';
 //import {Provider} from 'react-redux';
 // import  ReactDOM from 'react-dom';
-import Enzyme, {shallow, render, mount} from 'enzyme';
+import Enzyme, {shallow} from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
@@ -25,6 +25,5 @@ describe('### Tasklists tests', () => {
     it('>> renders without crashing', () => {
         expect(component).toMatchSnapshot();
     });
-
 });
 

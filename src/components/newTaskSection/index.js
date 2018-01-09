@@ -6,7 +6,7 @@ import {
     fetchListTasks
 } from '../../actions'
 
-class NewTaskSection extends Component{
+export class NewTaskSection extends Component{
     constructor(props) {
         super(props);
         this.state = {value: ''};

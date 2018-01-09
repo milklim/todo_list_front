@@ -12,7 +12,8 @@ describe('### ListHeader - On Edit Name', () => {
 
     let component;
     const editListStart = jest.fn(()=>component.setState({'isEditing': true}));
-    const editComplete = jest.fn();
+    const updateList = jest.fn();
+    const editComplete = jest.fn(() => component.setState({'isEditing': false}));
     const delList = jest.fn((id)=>component.setState({listForDelId: id}));
 
     beforeEach(() => {
@@ -21,7 +22,8 @@ describe('### ListHeader - On Edit Name', () => {
             editingList = {list}
             onEditListStart = {editListStart}
             onDoubleClick = {editListStart}
-            editListComplete = {editComplete}
+            updateList = {updateList}
+            onEditListFinish = {editComplete}
             deleteList = {delList}
         />);
     });
@@ -39,18 +41,38 @@ describe('### ListHeader - On Edit Name', () => {
         expect(editField).toHaveLength(1);
     });
 
-    it('>> edit list name; changed text in input is equal to state.editingName', () => {
+    it('>> rename list; changed text in input is equal to state.editingName', () => {
         const newName = 'newListName';
-
-        component.find('i.btn-edit').simulate('click');
-
-        const editField = component.find('input.editField');
-        editField.simulate('change', { target: { value: newName } });
+        changeName(newName);
         expect(component.state().editingName).toEqual(newName);
+    });
+
+    it('>> rename list complete; call updateFunc on Blur event', () => {
+        const txtInput = changeName('newName');
+        txtInput.simulate('blur');
+        expect(updateList).toHaveBeenCalled();
+        expect(editComplete).toHaveBeenCalled();
+    });
+
+    it('>> rename list complete; call updateFunc on EnterKeyDown', () => {
+        const txtInput = changeName('newName2');
+        txtInput.simulate('keyDown', {keyCode: 13});
+        expect(updateList).toHaveBeenCalledTimes(2);
+        expect(editComplete).toHaveBeenCalledTimes(2);
     });
 
     it('>> delete list; call deleteFunc with proper listId param', () => {
         component.find('i.btn-delete').simulate('click');
         expect(component.state().listForDelId).toEqual(list.id);
     });
+
+
+
+
+    function changeName(newName) {
+        component.find('i.btn-edit').simulate('click');
+        const editField = component.find('input.editField');
+        editField.simulate('change', {target: {value: newName}});
+        return editField;
+    }
 });
