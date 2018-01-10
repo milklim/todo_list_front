@@ -1,5 +1,5 @@
 import React from 'react';
-import Enzyme, {mount} from 'enzyme';
+import Enzyme, {mount, shallow} from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
 import {ListHeader} from "../components/listHeader";
@@ -17,7 +17,7 @@ describe('### ListHeader - On Edit Name', () => {
     const delList = jest.fn((id)=>component.setState({listForDelId: id}));
 
     beforeEach(() => {
-        component = mount(<ListHeader
+        component = shallow(<ListHeader
             list = {list}
             editingList = {list}
             onEditListStart = {editListStart}
@@ -56,7 +56,7 @@ describe('### ListHeader - On Edit Name', () => {
 
     it('>> rename list complete; call updateFunc on EnterKeyDown', () => {
         const txtInput = changeName('newName2');
-        txtInput.simulate('keyDown', {keyCode: 13});
+        txtInput.simulate('keyDown', {keyCode: 13, key: 'Enter'});
         expect(updateList).toHaveBeenCalledTimes(2);
         expect(editComplete).toHaveBeenCalledTimes(2);
     });

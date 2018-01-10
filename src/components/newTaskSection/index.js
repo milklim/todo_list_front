@@ -3,7 +3,7 @@ import {connect} from "react-redux";
 
 import {
     createTask,
-    fetchListTasks
+    // fetchListTasks
 } from '../../actions'
 
 export class NewTaskSection extends Component{
@@ -24,7 +24,6 @@ export class NewTaskSection extends Component{
         event.preventDefault()
         if (this.state.value.length > 0) {
             this.props.createTask(this.state.value, this.props.listId)
-            this.refs.txtField.value = ''
             this.setState({value: ''})
         }
     }
@@ -43,8 +42,7 @@ export class NewTaskSection extends Component{
                                type="text"
                                placeholder="Start typing here to create a task..."
                                onChange={this.handleChange}
-                               // onClick={this.handleClick}
-                               ref = 'txtField'
+                               value={this.state.value}
                         />
                     </div>
 
@@ -59,7 +57,7 @@ export class NewTaskSection extends Component{
 
 const mapDispatchToProps = {
     createTask,
-    fetchListTasks
+    // fetchListTasks
 }
 
-export default connect(null, mapDispatchToProps)(NewTaskSection)
+export default connect(null , mapDispatchToProps)(NewTaskSection)

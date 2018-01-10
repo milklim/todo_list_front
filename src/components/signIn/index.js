@@ -8,7 +8,7 @@ import {
 
 import {getAuthInfo} from "../../selectors";
 
-class SignIn extends Component {
+export class SignIn extends Component {
     constructor(props){
         super(props)
         this.state = {'email': ''}
