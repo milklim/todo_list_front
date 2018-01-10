@@ -39,8 +39,9 @@ export class SignIn extends Component {
                     <p>
                         <label>E-mail</label>
                         <input className="w3-input"
-                               type="text"
+                               type="email"
                                onChange = { (e) => this.setState({'email': e.target.value}) }
+                               value={this.state.email}
                         />
                     </p>
                     <p>
@@ -48,6 +49,7 @@ export class SignIn extends Component {
                         <input className="w3-input"
                                type="password"
                                onChange = { (e) => this.setState({'password': e.target.value}) }
+                               value={this.state.password}
                         />
                     </p>
 
