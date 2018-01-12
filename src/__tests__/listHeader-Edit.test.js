@@ -11,9 +11,9 @@ Enzyme.configure({adapter: new Adapter});
 describe('### ListHeader - On Edit Name', () => {
 
     let component;
-    const editListStart = jest.fn(()=>component.setState({'isEditing': true}));
+    const editListStart = jest.fn();
     const updateList = jest.fn();
-    const editComplete = jest.fn(() => component.setState({'isEditing': false}));
+    const editComplete = jest.fn();
     const delList = jest.fn((id)=>component.setState({listForDelId: id}));
 
     beforeEach(() => {
@@ -30,15 +30,18 @@ describe('### ListHeader - On Edit Name', () => {
 
 
     it('>> show edit field when pencil icon clicked', () => {
+        expect(component.find('input.editField')).toHaveLength(0);
+
         component.find('i.btn-edit').simulate('click');
-        const editField = component.find('input.editField');
-        expect(editField).toHaveLength(1);
+        expect(component.find('input.editField')).toHaveLength(1);
+
     });
 
     it('>> show edit field when list-header double-clicked', () => {
+        expect(component.find('input.editField')).toHaveLength(0);
+
         component.find('div.lst-title').simulate('doubleclick');
-        const editField = component.find('input.editField');
-        expect(editField).toHaveLength(1);
+        expect(component.find('input.editField')).toHaveLength(1);
     });
 
     it('>> rename list; changed text in input is equal to state.editingName', () => {

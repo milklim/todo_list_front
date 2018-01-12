@@ -7,13 +7,21 @@ import {
 } from '../../actions'
 import {getAuthInfo} from '../../selectors'
 
-class SignUp extends Component {
+export class SignUp extends Component {
     constructor(props){
         super(props)
         this.state = {'email': ''}
         this.state = {'password': ''}
         this.state = {'password_confirmation': ''}
+
+        this.handleChangeEmail = this.handleChangeEmail.bind(this)
+        this.handleChangePass = this.handleChangePass.bind(this)
+        this.handleChangePassConf = this.handleChangePassConf.bind(this)
     }
+
+    handleChangeEmail(event) { this.setState({email: event.target.value}) }
+    handleChangePass(event) { this.setState({password: event.target.value}) }
+    handleChangePassConf(event) { this.setState({password_confirmation: event.target.value}) }
 
     componentWillReceiveProps(nextProps) {
         if (nextProps.authInfo.isAuthenticate)
@@ -39,22 +47,22 @@ class SignUp extends Component {
                     <p>
                         <label>E-mail</label>
                         <input className="w3-input"
-                               type="text"
-                               onChange = { (e) => this.setState({'email': e.target.value}) }
+                               type="email"
+                               onChange = { this.handleChangeEmail }
                         />
                     </p>
                     <p>
                         <label>Password</label>
-                        <input className="w3-input"
+                        <input className="w3-input pass"
                                type="password"
-                               onChange = { (e) => this.setState({'password': e.target.value}) }
+                               onChange = { this.handleChangePass }
                         />
                     </p>
                     <p>
                         <label>Password confirm</label>
-                        <input className="w3-input"
+                        <input className="w3-input pass-confirm"
                                type="password"
-                               onChange={ (e) => this.setState({'password_confirmation': e.target.value }) }
+                               onChange={ this.handleChangePassConf }
                         />
                     </p>
                     <p>

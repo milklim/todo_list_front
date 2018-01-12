@@ -20,7 +20,7 @@ import {
 } from "../../selectors";
 
 
-class TasksOfList extends Component {
+export class TasksOfList extends Component {
     constructor(props) {
         super(props)
         this.state = {isDone: false}
@@ -28,7 +28,7 @@ class TasksOfList extends Component {
         this.state = {editedContent: ''}
     }
 
-    componentDidMount () {
+    componentWillMount () {
         this.props.fetchListTasks(this.props.listId) //param
     }
 
@@ -71,7 +71,7 @@ class TasksOfList extends Component {
                            onBlur={this.editTaskComplete.bind(this)}
                     />
         }
-            let renderContent = (this.state.isEditing && editingTask.id === task.id) ? editField : task.content
+        let renderContent = (this.state.isEditing && editingTask.id === task.id) ? editField : task.content
 
         return(
             <div
@@ -108,7 +108,7 @@ class TasksOfList extends Component {
                 </div>
                 <div className="w3-container w3-cell w3-cell-middle w3-center lst-icon">
                     <div className="w3-border-right w3-border-left w3-xlarge">
-                        <i className="fa fa-pencil w3-hover-text-black"
+                        <i className="fa fa-pencil w3-hover-text-black btn-edit"
                            onClick={this.editTask.bind(this, task)}
                         ></i>
                     </div>

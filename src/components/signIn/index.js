@@ -13,7 +13,13 @@ export class SignIn extends Component {
         super(props)
         this.state = {'email': ''}
         this.state = {'password': ''}
+
+        this.handleChangeEmail = this.handleChangeEmail.bind(this)
+        this.handleChangePass = this.handleChangePass.bind(this)
     }
+
+    handleChangeEmail(event) { this.setState({email: event.target.value}) }
+    handleChangePass(event) { this.setState({password: event.target.value}) }
 
     componentWillReceiveProps(nextProps) {
         if (nextProps.authInfo.isAuthenticate)
@@ -40,7 +46,7 @@ export class SignIn extends Component {
                         <label>E-mail</label>
                         <input className="w3-input"
                                type="email"
-                               onChange = { (e) => this.setState({'email': e.target.value}) }
+                               onChange = { this.handleChangeEmail }
                                value={this.state.email}
                         />
                     </p>
@@ -48,7 +54,7 @@ export class SignIn extends Component {
                         <label>Password</label>
                         <input className="w3-input"
                                type="password"
-                               onChange = { (e) => this.setState({'password': e.target.value}) }
+                               onChange = { this.handleChangePass }
                                value={this.state.password}
                         />
                     </p>

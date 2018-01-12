@@ -29,3 +29,14 @@ export const list = {
     created_at: '2018-01-04T15:24:58.428Z',
     updated_at: '2018-01-07T08:51:26.385Z'
 };
+
+export const newListName = "NEW_LIST_NAME";
+
+export const updatedList = {
+    id: 215,
+    label: newListName,
+    user_id: 19,
+    created_at: '2018-01-04T15:24:58.428Z',
+    updated_at: '2018-01-07T08:51:26.385Z'
+};
+
