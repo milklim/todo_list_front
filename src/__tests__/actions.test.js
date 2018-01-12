@@ -16,17 +16,27 @@ import {
     TASK_UPDATE_START, TASK_UPDATE_SUCCESS, TASK_UPDATE_FAILURE,
     TASK_DELETE_START, TASK_DELETE_SUCCESS, TASK_DELETE_FAILURE,
     TASK_TOGGLE_DONE_STATUS_START, TASK_TOGGLE_DONE_STATUS_SUCCESS, TASK_TOGGLE_DONE_STATUS_FAILURE,
-    TASK_POSITION_UP_START, TASK_POSITION_UP_SUCCESS, TASK_POSITION_UP_FAILURE, TASK_POSITION_DOWN_SUCCESS,
-    TASK_POSITION_DOWN_START, TASK_POSITION_DOWN_FAILURE,
+    TASK_POSITION_UP_START, TASK_POSITION_UP_SUCCESS, TASK_POSITION_UP_FAILURE,
+    TASK_POSITION_DOWN_START, TASK_POSITION_DOWN_SUCCESS, TASK_POSITION_DOWN_FAILURE,
+    TASK_EDIT_START, TASK_EDIT_FINISH,
+    USER_SIGN_UP_START, USER_SIGN_UP_SUCCESS, USER_SIGN_UP_FAILURE,
+    USER_SIGN_IN_START, USER_SIGN_IN_SUCCESS, USER_SIGN_IN_FAILURE,
+    USER_SIGN_OUT_START, USER_SIGN_OUT_SUCCESS,
 
 } from "../actionTypes";
 
 import {lists, list, updatedList, newListName} from '../__mock-data__/lists';
+import {movingUpTaskId, movedUpResult, movedDownResult, movingDownTaskId} from '../__mock-data__/taskMove';
+import {email, pass, signInResponse, signUpResponse} from '../__mock-data__/auth';
 import {
-    tasksOfTheList, fetchingListId, task, updatedTask, newTaskContent, delTaskId,
+    tasksOfTheList,
+    fetchingListId,
+    task,
+    updatedTask,
+    newTaskContent,
+    delTaskId,
     toggledDoneTask
 } from '../__mock-data__/tasks';
-import {movingUpTaskId, movedUpResult, movedDownResult, movingDownTaskId} from '../__mock-data__/taskMove';
 
 jest.mock('../api');
 
@@ -423,6 +433,123 @@ describe('### Actions | Tasks - Tests', () => {
         expect.assertions(1);
 
         await store.dispatch(Action.taskPositionDown('wrong' + movingDownTaskId));
+        expect(store.getActions()).toEqual(expectedActions);
+    });
+
+    it('>>> onEditTaskStart', () => {
+        const expectedActions = [
+            {
+                type: TASK_EDIT_START,
+                payload: task
+            }
+        ];
+
+        store.dispatch(Action.onEditTaskStart(task));
+        expect(store.getActions()).toEqual(expectedActions);
+    });
+
+    it('>>> onEditTaskFinish', () => {
+        const expectedActions = [
+            {
+                type: TASK_EDIT_FINISH,
+                payload: newTaskContent
+            }
+        ];
+
+        store.dispatch(Action.onEditTaskFinish(newTaskContent));
+        expect(store.getActions()).toEqual(expectedActions);
+    });
+});
+
+
+describe('### Actions | Auth - Tests', () => {
+    let store;
+    beforeEach(() => {
+        store = mockStore();
+    });
+
+    it('>>> userSignUp - SUCCESS', async  () => {
+        const expectedActions = [
+            {
+                type: USER_SIGN_UP_START
+            },
+            {
+                type: USER_SIGN_UP_SUCCESS,
+                payload: signUpResponse
+            }
+        ];
+
+        expect.assertions(1);
+
+        await store.dispatch(Action.userSignUp(email, pass, pass));
+        expect(store.getActions()).toEqual(expectedActions);
+    });
+    it('>>> userSignUp - FAIL', async  () => {
+        const expectedActions = [
+            {
+                type: USER_SIGN_UP_START
+            },
+            {
+                type: USER_SIGN_UP_FAILURE,
+                payload: 'err userSignUp',
+                error: true
+            }
+        ];
+
+        expect.assertions(1);
+
+        await store.dispatch(Action.userSignUp('wrong' + email, pass, pass));
+        expect(store.getActions()).toEqual(expectedActions);
+    });
+    
+    it('>>> userSignIn - SUCCESS', async  () => {
+        const expectedActions = [
+            {
+                type: USER_SIGN_IN_START
+            },
+            {
+                type: USER_SIGN_IN_SUCCESS,
+                payload: signInResponse
+            }
+        ];
+
+        expect.assertions(1);
+
+        await store.dispatch(Action.userSignIn(email, pass));
+        expect(store.getActions()).toEqual(expectedActions);
+    });
+    it('>>> userSignIn - FAIL', async  () => {
+        const expectedActions = [
+            {
+                type: USER_SIGN_IN_START
+            },
+            {
+                type: USER_SIGN_IN_FAILURE,
+                payload: 'err userSignIn',
+                error: true
+            }
+        ];
+
+        expect.assertions(1);
+
+        await store.dispatch(Action.userSignIn('wrong' + email, pass));
+        expect(store.getActions()).toEqual(expectedActions);
+    });
+
+    it('>>> userSignOut', async  () => {
+        const expectedActions = [
+            {
+                type: USER_SIGN_OUT_START
+            },
+            {
+                type: USER_SIGN_OUT_SUCCESS,
+                payload: {success: true}
+            }
+        ];
+
+        expect.assertions(1);
+
+        await store.dispatch(Action.userSignOut());
         expect(store.getActions()).toEqual(expectedActions);
     });
 });

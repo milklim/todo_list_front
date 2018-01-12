@@ -79,7 +79,7 @@ export const fetchLists = () => async dispatch => {
             payload: lists
         })
     } catch (err) {
-        console.log('catch', err)
+        // console.log('catch', err)
         dispatch({
             type: FETCH_LISTS_FAILURE,
             payload: err,
@@ -98,7 +98,7 @@ export const fetchListTasks = (listId) => async dispatch => {
             payload: tasks
         })
     } catch (err) {
-        console.log('catch', err)
+        // console.log('catch', err)
         dispatch({
             type: FETCH_LIST_TASKS_FAILURE,
             payload: err,
@@ -117,7 +117,7 @@ export const createList = (name) => async dispatch => {
             payload: response
         })
     } catch (err) {
-        console.log('catch', err)
+        // console.log('catch', err)
         dispatch({
             type: LIST_CREATE_FAILURE,
             payload: err,
@@ -137,7 +137,7 @@ export const updateList = (list, newLabel) => async dispatch => {
             payload: response
         })
     } catch (err) {
-        console.log('catch', err)
+        // console.log('catch', err)
         dispatch({
             type: LIST_UPDATE_FAILURE,
             payload: err,
@@ -156,7 +156,7 @@ export const deleteList = (listId) => async dispatch => {
             payload: response
         })
     } catch (err) {
-        console.log('catch', err)
+        // console.log('catch', err)
         dispatch({
             type: LIST_DELETE_FAILURE,
             payload: err,
@@ -190,7 +190,7 @@ export const createTask = (content, listId) => async dispatch => {
             payload: response
         })
     } catch (err) {
-        console.log('catch', err)
+        // console.log('catch', err)
         dispatch({
             type: TASK_CREATE_FAILURE,
             payload: err,
@@ -210,7 +210,7 @@ export const updateTask = (task, newContent) => async dispatch => {
             payload: response
         })
     } catch (err) {
-        console.log('catch', err)
+        // console.log('catch', err)
         dispatch({
             type: TASK_UPDATE_FAILURE,
             payload: err,
@@ -229,7 +229,7 @@ export const deleteTask = (taskId) => async dispatch => {
             payload: response
         })
     } catch (err) {
-        console.log('catch', err)
+        // console.log('catch', err)
         dispatch({
             type: TASK_DELETE_FAILURE,
             payload: err,
@@ -248,7 +248,7 @@ export const toggleDoneStatus = (taskId) => async dispatch => {
             payload: response
         })
     } catch (err) {
-        console.log('catch', err)
+        // console.log('catch', err)
         dispatch({
             type: TASK_TOGGLE_DONE_STATUS_FAILURE,
             payload: err,
@@ -267,7 +267,7 @@ export const taskPositionUp = (taskId) => async dispatch => {
             payload: response
         })
     } catch (err) {
-        console.log('catch', err)
+        // console.log('catch', err)
         dispatch({
             type: TASK_POSITION_UP_FAILURE,
             payload: err,
@@ -286,7 +286,7 @@ export const taskPositionDown = (taskId) => async dispatch => {
             payload: response
         })
     } catch (err) {
-        console.log('catch', err)
+        // console.log('catch', err)
         dispatch({
             type: TASK_POSITION_DOWN_FAILURE,
             payload: err,
@@ -320,7 +320,7 @@ export const userSignUp = (email, pass, passConf) => async dispatch => {
             payload: response
         })
     } catch (err) {
-        console.log('catch', err)
+        // console.log('catch', err)
         dispatch({
             type: USER_SIGN_UP_FAILURE,
             payload: err,
@@ -339,7 +339,7 @@ export const userSignIn = (email, pass) => async dispatch => {
             payload: response //headers
         })
     } catch (err) {
-        console.log('catch', err)
+        // console.log('catch', err)
         dispatch({
             type: USER_SIGN_IN_FAILURE,
             payload: err,
@@ -358,7 +358,7 @@ export const userSignOut = () => async dispatch => {
             payload: response //headers
         })
     } catch (err) {
-        console.log('catch', err)
+        // console.log('catch', err)
         dispatch({
             type: USER_SIGN_OUT_FAILURE,
             payload: err,

@@ -2,17 +2,16 @@ import {lists, list, newListName} from '../../__mock-data__/lists';
 import {
     tasksOfTheList,
     task,
-    updatedTask,
     newTaskContent,
     fetchingListId,
     delTaskId,
     toggledDoneTask,
 } from '../../__mock-data__/tasks';
 import {movingUpTaskId, movedUpResult, movingDownTaskId, movedDownResult} from '../../__mock-data__/taskMove';
+import {signUpResponse, signInResponse} from '../../__mock-data__/auth';
 
 
-let tsk, lst;
-let tasks;
+let tsk;
 
 export function fetchLists() {
     return new Promise((resolve, reject) => {
@@ -114,28 +113,27 @@ export function taskPositionDown(id) {
 };
 
 
+export function signUp(email, pass, passConf) {
+    return new Promise((resolve, reject) => {
+        if (email === signUpResponse.uid)
+            process.nextTick(() => resolve(signUpResponse));
+        else
+            process.nextTick(() => reject("err userSignUp"));
+    });
+}
 
+export function signIn(email, pass) {
+    return new Promise((resolve, reject) => {
+        if (email === signInResponse.uid)
+            process.nextTick(() => resolve(signInResponse));
+        else
+            process.nextTick(() => reject("err userSignIn"));
+    });
+}
 
+export function signOut(email, pass) {
+    return new Promise((resolve, reject) => {
+        process.nextTick(() => resolve({success: true}));
 
-
-// export const userService = {
-//     fetchUsers() {
-//         return new Promise((resolve, reject) => {
-//             process.nextTick(() => resolve(['user1', 'user2']));
-//         });
-//     }
-// }
-
-// export default function request(url) {
-//   return new Promise((resolve, reject) => {
-//     const userID = parseInt(url.substr('/users/'.length), 10);
-//     process.nextTick(
-//       () =>
-//         users[userID]
-//           ? resolve(users[userID])
-//           : reject({
-//               error: 'User with ' + userID + ' not found.',
-//             }),
-//     );
-//   });
-// }
+    });
+}
