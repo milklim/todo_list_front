@@ -1,5 +1,5 @@
 import React from 'react';
-import Enzyme, {render, mount} from 'enzyme';
+import Enzyme, {shallow, render, mount} from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
 import {ListHeader} from "../components/listHeader";
@@ -10,7 +10,7 @@ Enzyme.configure({adapter: new Adapter});
 
 describe('### ListHeader Component Tests', () => {
 
-    const component = mount(<ListHeader list = {list}/>);
+    const component = shallow(<ListHeader list = {list}/>);
 
     it('>> renders without crashing', () => {
         expect(component).toMatchSnapshot();

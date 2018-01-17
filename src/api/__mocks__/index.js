@@ -131,7 +131,7 @@ export function signIn(email, pass) {
     });
 }
 
-export function signOut(email, pass) {
+export function signOut(headers) {
     return new Promise((resolve, reject) => {
         process.nextTick(() => resolve({success: true}));
 

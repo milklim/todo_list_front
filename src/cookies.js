@@ -1,9 +1,17 @@
-import Cookies from 'js-cookie'
+import Cookies, {Cookie} from 'js-cookie'
 
 export const setAuthCookies = (headers) => {
     setCookie('access-token', headers['access-token'])
     setCookie('client', headers['client'])
     setCookie('uid', headers['uid'])
+}
+
+export const getAuthCookies = () => {
+    return {
+        'access-token': getCookie('access-token'),
+        'client': getCookie('client'),
+        'uid': getCookie('uid')
+    }
 }
 
 export const getCookie = (key) => {
@@ -20,4 +28,8 @@ export const removeAuthCookies = () => {
     Cookies.remove('access-token')
     Cookies.remove('client')
     Cookies.remove('uid')
+}
+
+export const isLoggedFromCookies = () => {
+    return Cookie('uid') && Cookie('access-token')
 }

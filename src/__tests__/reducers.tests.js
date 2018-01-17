@@ -86,7 +86,12 @@ describe('### Reducer | auth - Tests', () => {
     it('>>> handle USER_SIGN_UP_SUCCESS', () => {
         state = {
             isAuthenticate: true ,
-            userName: signUpResponse['uid']
+            userName: signUpResponse['uid'],
+            headers: {
+                'access-token': signInResponse['access-token'],
+                'client': signInResponse['client'],
+                'uid': signInResponse['uid']
+            }
         };
         action = {
             type: act.USER_SIGN_UP_SUCCESS,
@@ -98,7 +103,12 @@ describe('### Reducer | auth - Tests', () => {
     it('>>> handle USER_SIGN_IN_SUCCESS', () => {
         state = {
             isAuthenticate: true ,
-            userName: signInResponse['uid']
+            userName: signInResponse['uid'],
+            headers: {
+                'access-token': signInResponse['access-token'],
+                'client': signInResponse['client'],
+                'uid': signInResponse['uid']
+            }
         };
         action = {
             type: act.USER_SIGN_IN_SUCCESS,

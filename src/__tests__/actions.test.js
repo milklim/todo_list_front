@@ -44,7 +44,7 @@ jest.mock('../api');
 describe('### Actions | Lists - Tests', () => {
     let store;
     beforeEach(() => {
-        store = mockStore();
+        store = mockStore({auth: {isAuthenticate: true, headers: {}}});
     });
 
     it('>>> fetchLists', async  () => {
@@ -229,7 +229,7 @@ describe('### Actions | Lists - Tests', () => {
 describe('### Actions | Tasks - Tests', () => {
     let store;
     beforeEach(() => {
-        store = mockStore();
+        store = mockStore({auth: {isAuthenticate: true, headers: {}}});
     });
 
     it('>>> createTask - SUCCESS', async  () => {
@@ -465,7 +465,7 @@ describe('### Actions | Tasks - Tests', () => {
 describe('### Actions | Auth - Tests', () => {
     let store;
     beforeEach(() => {
-        store = mockStore();
+        store = mockStore({auth: {isAuthenticate: true, headers: {}}});
     });
 
     it('>>> userSignUp - SUCCESS', async  () => {

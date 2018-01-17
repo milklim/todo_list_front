@@ -1,3 +1,5 @@
+import {browserHistory} from 'react-router'
+import {getAuthCookies} from '../cookies'
 import {
     FETCH_LISTS_START,
     FETCH_LISTS_SUCCESS,
@@ -46,7 +48,10 @@ import {
     USER_SIGN_IN_FAILURE,
     USER_SIGN_OUT_START,
     USER_SIGN_OUT_SUCCESS,
-    USER_SIGN_OUT_FAILURE
+    USER_SIGN_OUT_FAILURE,
+    VALIDATE_TOKEN_START,
+    VALIDATE_TOKEN_SUCCESS,
+    VALIDATE_TOKEN_FAILURE,
 
 } from '../actionTypes'
 
@@ -65,15 +70,16 @@ import {
     signUp as signUpApi,
     signIn as signInApi,
     signOut as signOutApi,
-
+    validateToken as validateTokenApi,
 } from '../api'
 
 
-export const fetchLists = () => async dispatch => {
+export const fetchLists = () => async (dispatch, getState) => {
     dispatch({type: FETCH_LISTS_START})
-
+    
     try {
-        const lists = await fetchListsApi()
+        const headers = getState().auth.headers;
+        const lists = await fetchListsApi(headers)
         dispatch({
             type: FETCH_LISTS_SUCCESS,
             payload: lists
@@ -88,11 +94,12 @@ export const fetchLists = () => async dispatch => {
     }
 }
 
-export const fetchListTasks = (listId) => async dispatch => {
+export const fetchListTasks = (listId) => async (dispatch, getState) => {
     dispatch({type: FETCH_LIST_TASKS_START})
 
     try {
-        const tasks = await fetchListTasksApi(listId)
+        const headers = getState().auth.headers;
+        const tasks = await fetchListTasksApi(listId, headers);
         dispatch({
             type: FETCH_LIST_TASKS_SUCCESS,
             payload: tasks
@@ -107,11 +114,12 @@ export const fetchListTasks = (listId) => async dispatch => {
     }
 }
 
-export const createList = (name) => async dispatch => {
+export const createList = (name) => async (dispatch, getState) => {
     dispatch({type: LIST_CREATE_START})
 
     try {
-        const response = await createListApi(name)
+        const headers = getState().auth.headers;
+        const response = await createListApi(name, headers)
         dispatch({
             type: LIST_CREATE_SUCCESS,
             payload: response
@@ -126,12 +134,13 @@ export const createList = (name) => async dispatch => {
     }    
 }
 
-export const updateList = (list, newLabel) => async dispatch => {
+export const updateList = (list, newLabel) => async (dispatch, getState) => {
     dispatch({type: LIST_UPDATE_START})
     list.label = newLabel
 
     try {
-        const response = await updateListApi(list)
+        const headers = getState().auth.headers;
+        const response = await updateListApi(list, headers)
         dispatch({
             type: LIST_UPDATE_SUCCESS,
             payload: response
@@ -146,11 +155,12 @@ export const updateList = (list, newLabel) => async dispatch => {
     }
 }
 
-export const deleteList = (listId) => async dispatch => {
+export const deleteList = (listId) => async (dispatch, getState) => {
     dispatch({type: LIST_DELETE_START})
 
     try {
-        const response = await deleteListApi(listId)
+        const headers = getState().auth.headers;
+        const response = await deleteListApi(listId, headers)
         dispatch({
             type: LIST_DELETE_SUCCESS,
             payload: response
@@ -180,11 +190,12 @@ export const onEditListFinish = (changedContent) => dispatch => {
 }
 
 
-export const createTask = (content, listId) => async dispatch => {
+export const createTask = (content, listId) => async (dispatch, getState) => {
     dispatch({type: TASK_CREATE_START})
 
     try {
-        const response = await createTaskApi(content, listId)
+        const headers = getState().auth.headers;
+        const response = await createTaskApi(content, listId, headers)
         dispatch({
             type: TASK_CREATE_SUCCESS,
             payload: response
@@ -199,12 +210,13 @@ export const createTask = (content, listId) => async dispatch => {
     }
 }
 
-export const updateTask = (task, newContent) => async dispatch => {
+export const updateTask = (task, newContent) => async (dispatch, getState) => {
     dispatch({type: TASK_UPDATE_START})
     task.content = newContent
 
     try {
-        const response = await updateTaskApi(task)
+        const headers = getState().auth.headers;
+        const response = await updateTaskApi(task, headers)
         dispatch({
             type: TASK_UPDATE_SUCCESS,
             payload: response
@@ -219,11 +231,12 @@ export const updateTask = (task, newContent) => async dispatch => {
     }
 }
 
-export const deleteTask = (taskId) => async dispatch => {
+export const deleteTask = (taskId) => async (dispatch, getState) => {
     dispatch({type: TASK_DELETE_START})
 
     try {
-        const response = await deleteTaskApi(taskId)
+        const headers = getState().auth.headers;
+        const response = await deleteTaskApi(taskId, headers)
         dispatch({
             type: TASK_DELETE_SUCCESS,
             payload: response
@@ -238,11 +251,12 @@ export const deleteTask = (taskId) => async dispatch => {
     }
 }
 
-export const toggleDoneStatus = (taskId) => async dispatch => {
+export const toggleDoneStatus = (taskId) => async (dispatch, getState) => {
     dispatch({type: TASK_TOGGLE_DONE_STATUS_START})
 
     try {
-        const response = await toggleDoneStatusApi(taskId)
+        const headers = getState().auth.headers;
+        const response = await toggleDoneStatusApi(taskId, headers)
         dispatch({
             type: TASK_TOGGLE_DONE_STATUS_SUCCESS,
             payload: response
@@ -257,11 +271,12 @@ export const toggleDoneStatus = (taskId) => async dispatch => {
     }
 }
 
-export const taskPositionUp = (taskId) => async dispatch => {
+export const taskPositionUp = (taskId) => async (dispatch, getState) => {
     dispatch({type: TASK_POSITION_UP_START})
 
     try {
-        const response = await taskPositionUpApi(taskId)
+        const headers = getState().auth.headers;
+        const response = await taskPositionUpApi(taskId, headers)
         dispatch({
             type: TASK_POSITION_UP_SUCCESS,
             payload: response
@@ -276,11 +291,12 @@ export const taskPositionUp = (taskId) => async dispatch => {
     }
 }
 
-export const taskPositionDown = (taskId) => async dispatch => {
+export const taskPositionDown = (taskId) => async (dispatch, getState) => {
     dispatch({type: TASK_POSITION_DOWN_START})
 
     try {
-        const response = await taskPositionDownApi(taskId)
+        const headers = getState().auth.headers;
+        const response = await taskPositionDownApi(taskId, headers)
         dispatch({
             type: TASK_POSITION_DOWN_SUCCESS,
             payload: response
@@ -310,7 +326,7 @@ export const onEditTaskFinish = (changedContent) => dispatch => {
 }
 
 
-export const userSignUp = (email, pass, passConf) => async dispatch => {
+export const userSignUp = (email, pass, passConf) => async (dispatch) => {
     dispatch({type: USER_SIGN_UP_START})
 
     try {
@@ -329,7 +345,7 @@ export const userSignUp = (email, pass, passConf) => async dispatch => {
     }
 }
 
-export const userSignIn = (email, pass) => async dispatch => {
+export const userSignIn = (email, pass) => async (dispatch) => {
     dispatch({type: USER_SIGN_IN_START})
 
     try {
@@ -348,19 +364,40 @@ export const userSignIn = (email, pass) => async dispatch => {
     }
 }
 
-export const userSignOut = () => async dispatch => {
+export const userSignOut = () => async (dispatch, getState) => {
     dispatch({type: USER_SIGN_OUT_START})
 
     try {
-        const response = await signOutApi()
+        const headers = getState().auth.headers;
+        const response = await signOutApi(headers)
         dispatch({
             type: USER_SIGN_OUT_SUCCESS,
             payload: response //headers
         })
+        // browserHistory.replace("/sign_in")
     } catch (err) {
         // console.log('catch', err)
         dispatch({
             type: USER_SIGN_OUT_FAILURE,
+            payload: err,
+            error: true
+        })
+    }
+}
+
+export const validateToken = () => async (dispatch) => {
+    dispatch({type: VALIDATE_TOKEN_START})
+    try {
+        const response = await validateTokenApi(getAuthCookies())
+        dispatch({
+            type: VALIDATE_TOKEN_SUCCESS,
+            payload: response.data
+        })
+    }
+    catch (err){
+        console.log('actions.validateToken[err]: ', err)
+        dispatch({
+            type: VALIDATE_TOKEN_FAILURE,
             payload: err,
             error: true
         })

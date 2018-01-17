@@ -16,7 +16,7 @@ import {
 
 import {
     getTasksOfList,
-    getEditingTask,
+    getEditingTask, getAuthInfo,
 } from "../../selectors";
 
 
@@ -139,7 +139,9 @@ export class TasksOfList extends Component {
 const mapStateToProps = (state, ownProps) => {
     return {
         tasks: getTasksOfList(state, ownProps.listId),
-        editingTask: getEditingTask(state)
+        editingTask: getEditingTask(state),
+        authInfo: getAuthInfo(state),
+
     }
 }
 

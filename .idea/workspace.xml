@@ -3,8 +3,22 @@
   <component name="ChangeListManager">
     <list default="true" id="428d5f07-e8f7-49e8-8e22-fc0689e53684" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/components/authenticatedWrapper/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
+      <change beforePath="$PROJECT_DIR$/src/__mock-data__/auth.js" afterPath="$PROJECT_DIR$/src/__mock-data__/auth.js" />
+      <change beforePath="$PROJECT_DIR$/src/__tests__/actions.test.js" afterPath="$PROJECT_DIR$/src/__tests__/actions.test.js" />
+      <change beforePath="$PROJECT_DIR$/src/__tests__/layout.test.js" afterPath="$PROJECT_DIR$/src/__tests__/layout.test.js" />
+      <change beforePath="$PROJECT_DIR$/src/__tests__/listHeader.test.js" afterPath="$PROJECT_DIR$/src/__tests__/listHeader.test.js" />
+      <change beforePath="$PROJECT_DIR$/src/__tests__/reducers.tests.js" afterPath="$PROJECT_DIR$/src/__tests__/reducers.tests.js" />
+      <change beforePath="$PROJECT_DIR$/src/actionTypes.js" afterPath="$PROJECT_DIR$/src/actionTypes.js" />
+      <change beforePath="$PROJECT_DIR$/src/actions/index.js" afterPath="$PROJECT_DIR$/src/actions/index.js" />
+      <change beforePath="$PROJECT_DIR$/src/api/__mocks__/index.js" afterPath="$PROJECT_DIR$/src/api/__mocks__/index.js" />
+      <change beforePath="$PROJECT_DIR$/src/api/index.js" afterPath="$PROJECT_DIR$/src/api/index.js" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/index.js" afterPath="$PROJECT_DIR$/src/components/layout/index.js" />
+      <change beforePath="$PROJECT_DIR$/src/components/signIn/index.js" afterPath="$PROJECT_DIR$/src/components/signIn/index.js" />
+      <change beforePath="$PROJECT_DIR$/src/components/tasklists/index.js" afterPath="$PROJECT_DIR$/src/components/tasklists/index.js" />
+      <change beforePath="$PROJECT_DIR$/src/components/tasksOfList/index.js" afterPath="$PROJECT_DIR$/src/components/tasksOfList/index.js" />
+      <change beforePath="$PROJECT_DIR$/src/cookies.js" afterPath="$PROJECT_DIR$/src/cookies.js" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/auth.js" afterPath="$PROJECT_DIR$/src/reducers/auth.js" />
+      <change beforePath="$PROJECT_DIR$/src/selectors.js" afterPath="$PROJECT_DIR$/src/selectors.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,48 +65,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
+      <file leaf-file-name="actions.test.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/__tests__/actions.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+            <state relative-caret-position="486">
+              <caret line="538" column="39" lean-forward="false" selection-start-line="538" selection-start-column="39" selection-end-line="538" selection-end-column="39" />
               <folding>
-                <element signature="e#0#24#0" expanded="true" />
+                <element signature="e#1752#6598#0" expanded="false" />
+                <element signature="e#2334#2738#0" expanded="false" />
+                <element signature="e#2790#3239#0" expanded="false" />
+                <element signature="e#3716#4144#0" expanded="false" />
+                <element signature="e#4636#5070#0" expanded="false" />
+                <element signature="e#5122#5495#0" expanded="false" />
+                <element signature="e#6313#6594#0" expanded="false" />
+                <element signature="e#6649#13086#0" expanded="false" />
+                <element signature="e#6818#7210#0" expanded="false" />
+                <element signature="e#7258#7695#0" expanded="false" />
+                <element signature="e#7747#8140#0" expanded="false" />
+                <element signature="e#8188#8625#0" expanded="false" />
+                <element signature="e#8677#9052#0" expanded="false" />
+                <element signature="e#9100#9526#0" expanded="false" />
+                <element signature="e#9584#9998#0" expanded="false" />
+                <element signature="e#10052#10505#0" expanded="false" />
+                <element signature="e#10561#10964#0" expanded="false" />
+                <element signature="e#11016#11465#0" expanded="false" />
+                <element signature="e#11523#11936#0" expanded="false" />
+                <element signature="e#11990#12449#0" expanded="false" />
+                <element signature="e#12489#12754#0" expanded="false" />
+                <element signature="e#12795#13082#0" expanded="false" />
+                <element signature="e#13305#13700#0" expanded="false" />
+                <element signature="e#13748#14184#0" expanded="false" />
+                <element signature="e#14240#14629#0" expanded="false" />
+                <element signature="e#14677#15107#0" expanded="false" />
+                <element signature="e#15150#15532#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/layout/index.js">
+      <file leaf-file-name="selectors.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/selectors.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="51" column="12" lean-forward="false" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/tasksOfList/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
-              <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+            <state relative-caret-position="252">
+              <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/tasklists/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -100,31 +116,39 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/actions/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="350" column="13" lean-forward="false" selection-start-line="350" selection-start-column="13" selection-end-line="350" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="auth.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/reducers/auth.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="454">
+              <caret line="378" column="36" lean-forward="false" selection-start-line="378" selection-start-column="36" selection-end-line="378" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/signIn/index.js">
+        <entry file="file://$PROJECT_DIR$/src/components/tasklists/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1134">
-              <caret line="71" column="34" lean-forward="false" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="36" />
+            <state relative-caret-position="450">
+              <caret line="31" column="16" lean-forward="true" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
+                <marker date="1516204510363" expanded="true" signature="809:979" ph="..." />
+                <marker date="1516204510363" expanded="true" signature="853:973" ph="..." />
+                <marker date="1516204510363" expanded="true" signature="1081:1659" ph="..." />
+                <marker date="1516204510363" expanded="true" signature="1138:1200" ph="..." />
+                <marker date="1516204510363" expanded="true" signature="1334:1640" ph="..." />
+                <marker date="1516204510363" expanded="true" signature="1363:1515" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/signIn/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="558">
+              <caret line="39" column="22" lean-forward="true" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -141,8 +165,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>PHONES</find>
-      <find>TASKLISTS</find>
       <find>LISTS</find>
       <find>class</find>
       <find>create</find>
@@ -168,11 +190,13 @@
       <find>content: 'ew',</find>
       <find>task for toggling done status</find>
       <find>btnDel</find>
+      <find>notLogged</find>
+      <find>=&gt; async dispatch =&gt;</find>
+      <find>try {</find>
+      <find>{ headers: authHeader() }</find>
+      <find>) =&gt; {</find>
     </findStrings>
     <replaceStrings>
-      <replace>TASKLISTS</replace>
-      <replace>LISTS</replace>
-      <replace>LIST_TASKS</replace>
       <replace>className</replace>
       <replace>delete</replace>
       <replace>DELETE</replace>
@@ -197,6 +221,12 @@
       <replace>content: 'task for toggling done status',</replace>
       <replace>task for toggling done status and moving</replace>
       <replace>delBtns</replace>
+      <replace>notLoggedName</replace>
+      <replace>=&gt; async dispatch =&gt;</replace>
+      <replace>=&gt; async (dispatch, getState) =&gt;</replace>
+      <replace>try { const headers = getState().auth.headers;</replace>
+      <replace>{ headers }</replace>
+      <replace>, headers) =&gt; {</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -210,8 +240,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/node_modules/containers/layout/index.js" />
-        <option value="$PROJECT_DIR$/src/todolistUI _v2.html" />
         <option value="$PROJECT_DIR$/src/node_modules/components/newTaskSection/index.js" />
         <option value="$PROJECT_DIR$/src/node_modules/components/tasklists/index.js" />
         <option value="$PROJECT_DIR$/src/node_modules/components/listHeader/index.js" />
@@ -223,44 +251,46 @@
         <option value="$PROJECT_DIR$/src/reducers/lists.js" />
         <option value="$PROJECT_DIR$/src/reducers/editedTask.js" />
         <option value="$PROJECT_DIR$/src/reducers/editedList.js" />
-        <option value="$PROJECT_DIR$/src/reducers/auth.js" />
         <option value="$PROJECT_DIR$/src/store/index.js" />
         <option value="$PROJECT_DIR$/src/styles_v2.css" />
         <option value="$PROJECT_DIR$/src/__tests__/__mock-data__/lists.js" />
         <option value="$PROJECT_DIR$/src/__tests__/newTask..js" />
         <option value="$PROJECT_DIR$/src/components/newTaskSection/index.js" />
         <option value="$PROJECT_DIR$/src/__tests__/newTask.test.js" />
-        <option value="$PROJECT_DIR$/src/__tests__/listHeader.test.js" />
         <option value="$PROJECT_DIR$/src/components/signUp/index.js" />
-        <option value="$PROJECT_DIR$/src/components/signIn/index.js" />
         <option value="$PROJECT_DIR$/src/__tests__/signUp.test.js" />
         <option value="$PROJECT_DIR$/src/components/task/index.js" />
-        <option value="$PROJECT_DIR$/src/__tests__/layout.test.js" />
         <option value="$PROJECT_DIR$/src/actions/__mocks__/index.js" />
         <option value="$PROJECT_DIR$/src/__mock-data__/taskMoveUp.js" />
         <option value="$PROJECT_DIR$/src/__mock-data__/taskMove.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/__mock-data__/auth.js" />
-        <option value="$PROJECT_DIR$/src/actions/index.js" />
-        <option value="$PROJECT_DIR$/src/api/__mocks__/index.js" />
-        <option value="$PROJECT_DIR$/src/__tests__/actions.test.js" />
         <option value="$PROJECT_DIR$/src/__mock-data__/lists.js" />
         <option value="$PROJECT_DIR$/src/reducers/index.js" />
-        <option value="$PROJECT_DIR$/src/__tests__/reducers.tests.js" />
-        <option value="$PROJECT_DIR$/src/api/index.js" />
-        <option value="$PROJECT_DIR$/src/selectors.js" />
         <option value="$PROJECT_DIR$/src/reducers/tasks.js" />
         <option value="$PROJECT_DIR$/src/__mock-data__/tasks.js" />
         <option value="$PROJECT_DIR$/src/components/listHeader/index.js" />
-        <option value="$PROJECT_DIR$/src/components/tasksOfList/index.js" />
         <option value="$PROJECT_DIR$/src/__tests__/listHeader-Edit.test.js" />
         <option value="$PROJECT_DIR$/src/__tests__/tasks.test.js" />
         <option value="$PROJECT_DIR$/src/__tests__/signIn.test.js" />
         <option value="$PROJECT_DIR$/src/__tests__/tasklists.test.js" />
         <option value="$PROJECT_DIR$/src/components/authenticatedWrapper/index.js" />
-        <option value="$PROJECT_DIR$/src/components/layout/index.js" />
-        <option value="$PROJECT_DIR$/src/components/tasklists/index.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/actionTypes.js" />
+        <option value="$PROJECT_DIR$/src/components/layout/index.js" />
+        <option value="$PROJECT_DIR$/src/components/tasksOfList/index.js" />
+        <option value="$PROJECT_DIR$/src/api/index.js" />
+        <option value="$PROJECT_DIR$/src/cookies.js" />
+        <option value="$PROJECT_DIR$/src/reducers/auth.js" />
+        <option value="$PROJECT_DIR$/src/api/__mocks__/index.js" />
+        <option value="$PROJECT_DIR$/src/__mock-data__/auth.js" />
+        <option value="$PROJECT_DIR$/src/__tests__/layout.test.js" />
+        <option value="$PROJECT_DIR$/src/__tests__/listHeader.test.js" />
+        <option value="$PROJECT_DIR$/src/__tests__/reducers.tests.js" />
+        <option value="$PROJECT_DIR$/src/__tests__/actions.test.js" />
+        <option value="$PROJECT_DIR$/src/actions/index.js" />
+        <option value="$PROJECT_DIR$/src/selectors.js" />
+        <option value="$PROJECT_DIR$/src/components/tasklists/index.js" />
+        <option value="$PROJECT_DIR$/src/components/signIn/index.js" />
       </list>
     </option>
   </component>
@@ -314,7 +344,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -331,12 +360,25 @@
               <item name="todo_list_front" type="b2602c69:ProjectViewProjectNode" />
               <item name="todo_list_front" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="actions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="todo_list_front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="todo_list_front" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="todo_list_front" type="b2602c69:ProjectViewProjectNode" />
               <item name="todo_list_front" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="__mocks__" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="todo_list_front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="todo_list_front" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -344,7 +386,7 @@
               <item name="todo_list_front" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
+              <item name="signIn" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="todo_list_front" type="b2602c69:ProjectViewProjectNode" />
@@ -357,25 +399,25 @@
               <item name="todo_list_front" type="b2602c69:ProjectViewProjectNode" />
               <item name="todo_list_front" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="tasksOfList" type="462c0819:PsiDirectoryNode" />
+              <item name="reducers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="todo_list_front" type="b2602c69:ProjectViewProjectNode" />
               <item name="todo_list_front" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="reducers" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../todo-front-v2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../st/investarenafrontend-refactor_branch" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL&#10;Oracle" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -402,39 +444,78 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.### ListHeader - On Edit Name.&gt;&gt; show edit field when pencil icon clicked">
-    <configuration name="### ListHeader - On Edit Name.&gt;&gt; show edit field when pencil icon clicked" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.### Actions | Auth - Tests.&gt;&gt;&gt; userSignOut">
+    <configuration name="### Actions | Auth - Tests" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/__tests__/actions.test.js" />
+      <test-names>
+        <test-name value="### Actions | Auth - Tests" />
+      </test-names>
+    </configuration>
+    <configuration name="### Actions | Auth - Tests.&gt;&gt;&gt; userSignOut" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/__tests__/listHeader-Edit.test.js" />
+      <test-file value="$PROJECT_DIR$/src/__tests__/actions.test.js" />
       <test-names>
-        <test-name value="### ListHeader - On Edit Name" />
-        <test-name value="&gt;&gt; show edit field when pencil icon clicked" />
+        <test-name value="### Actions | Auth - Tests" />
+        <test-name value="&gt;&gt;&gt; userSignOut" />
       </test-names>
     </configuration>
-    <configuration name="### Tasks tests.&gt;&gt; edit task; render txtInput for editing when edit-icon[pencil] clicked" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+    <configuration name="### Actions | Lists - Tests" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/__tests__/actions.test.js" />
+      <test-names>
+        <test-name value="### Actions | Lists - Tests" />
+      </test-names>
+    </configuration>
+    <configuration name="### Actions | Lists - Tests.&gt;&gt;&gt; fetchLists" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/__tests__/tasks.test.js" />
+      <test-file value="$PROJECT_DIR$/src/__tests__/actions.test.js" />
       <test-names>
-        <test-name value="### Tasks tests" />
-        <test-name value="&gt;&gt; edit task; render txtInput for editing when edit-icon[pencil] clicked" />
+        <test-name value="### Actions | Lists - Tests" />
+        <test-name value="&gt;&gt;&gt; fetchLists" />
       </test-names>
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Jest.### Tasks tests.&gt;&gt; edit task; render txtInput for editing when edit-icon[pencil] clicked" />
-      <item index="1" class="java.lang.String" itemvalue="Jest.### ListHeader - On Edit Name.&gt;&gt; show edit field when pencil icon clicked" />
+    <configuration name="### Actions | Tasks - Tests" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/__tests__/actions.test.js" />
+      <test-names>
+        <test-name value="### Actions | Tasks - Tests" />
+      </test-names>
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Jest.### Actions | Lists - Tests.&gt;&gt;&gt; fetchLists" />
+      <item index="1" class="java.lang.String" itemvalue="Jest.### Actions | Lists - Tests" />
+      <item index="2" class="java.lang.String" itemvalue="Jest.### Actions | Tasks - Tests" />
+      <item index="3" class="java.lang.String" itemvalue="Jest.### Actions | Auth - Tests" />
+      <item index="4" class="java.lang.String" itemvalue="Jest.### Actions | Auth - Tests.&gt;&gt;&gt; userSignOut" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Jest.### ListHeader - On Edit Name.&gt;&gt; show edit field when pencil icon clicked" />
-        <item index="1" class="java.lang.String" itemvalue="Jest.### Tasks tests.&gt;&gt; edit task; render txtInput for editing when edit-icon[pencil] clicked" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Jest.### Actions | Auth - Tests.&gt;&gt;&gt; userSignOut" />
+        <item index="1" class="java.lang.String" itemvalue="Jest.### Actions | Auth - Tests" />
+        <item index="2" class="java.lang.String" itemvalue="Jest.### Actions | Tasks - Tests" />
+        <item index="3" class="java.lang.String" itemvalue="Jest.### Actions | Lists - Tests" />
+        <item index="4" class="java.lang.String" itemvalue="Jest.### Actions | Lists - Tests.&gt;&gt;&gt; fetchLists" />
       </list>
     </recent_temporary>
   </component>
@@ -486,7 +567,8 @@
       <workItem from="1515999403837" duration="17335000" />
       <workItem from="1516016951050" duration="11375000" />
       <workItem from="1516086024277" duration="28024000" />
-      <workItem from="1516172594538" duration="3029000" />
+      <workItem from="1516172594538" duration="7989000" />
+      <workItem from="1516181963744" duration="21912000" />
     </task>
     <task id="LOCAL-00001" summary="add dependencies">
       <created>1513595069420</created>
@@ -663,46 +745,53 @@
       <option name="project" value="LOCAL" />
       <updated>1516173640081</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="AuthWrapper is deleted. Added 'onEnter' attr for 'sign_in'/'sign_up' routes.">
+      <created>1516176374404</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1516176374404</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="###_ListHeader_-_On_Edit_Name____show_edit_field_when_pencil_icon_clicked - 2018.01.16 at 14h 24m 59s.xml">
-      <configuration name="### ListHeader - On Edit Name.&gt;&gt; show edit field when pencil icon clicked" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="###_Actions___Auth_-_Tests - 2018.01.17 at 17h 25m 33s.xml">
+      <configuration name="### Actions | Auth - Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="###_ListHeader_-_On_Edit_Name____show_edit_field_when_pencil_icon_clicked - 2018.01.16 at 14h 26m 17s.xml">
-      <configuration name="### ListHeader - On Edit Name.&gt;&gt; show edit field when pencil icon clicked" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="###_Actions___Auth_-_Tests_____userSignOut - 2018.01.17 at 17h 44m 31s.xml">
+      <configuration name="### Actions | Auth - Tests.&gt;&gt;&gt; userSignOut" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="###_ListHeader_-_On_Edit_Name____show_edit_field_when_pencil_icon_clicked - 2018.01.16 at 14h 28m 06s.xml">
-      <configuration name="### ListHeader - On Edit Name.&gt;&gt; show edit field when pencil icon clicked" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="###_Actions___Lists_-_Tests - 2018.01.17 at 17h 23m 30s.xml">
+      <configuration name="### Actions | Lists - Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="###_ListHeader_-_On_Edit_Name____show_edit_field_when_pencil_icon_clicked - 2018.01.16 at 14h 34m 24s.xml">
-      <configuration name="### ListHeader - On Edit Name.&gt;&gt; show edit field when pencil icon clicked" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="###_Actions___Lists_-_Tests_____fetchLists - 2018.01.17 at 17h 11m 38s.xml">
+      <configuration name="### Actions | Lists - Tests.&gt;&gt;&gt; fetchLists" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="###_ListHeader_-_On_Edit_Name____show_edit_field_when_pencil_icon_clicked - 2018.01.16 at 14h 35m 18s.xml">
-      <configuration name="### ListHeader - On Edit Name.&gt;&gt; show edit field when pencil icon clicked" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="###_Actions___Lists_-_Tests_____fetchLists - 2018.01.17 at 17h 12m 35s.xml">
+      <configuration name="### Actions | Lists - Tests.&gt;&gt;&gt; fetchLists" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="###_ListHeader_-_On_Edit_Name____show_edit_field_when_pencil_icon_clicked - 2018.01.16 at 14h 39m 16s.xml">
-      <configuration name="### ListHeader - On Edit Name.&gt;&gt; show edit field when pencil icon clicked" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="###_Actions___Tasks_-_Tests - 2018.01.17 at 17h 24m 29s.xml">
+      <configuration name="### Actions | Tasks - Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="###_ListHeader_-_On_Edit_Name____show_edit_field_when_pencil_icon_clicked - 2018.01.16 at 14h 39m 58s.xml">
-      <configuration name="### ListHeader - On Edit Name.&gt;&gt; show edit field when pencil icon clicked" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="###_Actions___Tasks_-_Tests - 2018.01.17 at 17h 25m 02s.xml">
+      <configuration name="### Actions | Tasks - Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="###_Tasks_tests____edit_task__render_txtInput_for_editing_when_edit-icon[pencil]_clicked - 2018.01.16 at 14h 18m 44s.xml">
-      <configuration name="### Tasks tests.&gt;&gt; edit task; render txtInput for editing when edit-icon[pencil] clicked" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="###_Actions___Tasks_-_Tests - 2018.01.17 at 17h 25m 22s.xml">
+      <configuration name="### Actions | Tasks - Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="###_Tasks_tests____edit_task__render_txtInput_for_editing_when_edit-icon[pencil]_clicked - 2018.01.16 at 14h 35m 34s.xml">
-      <configuration name="### Tasks tests.&gt;&gt; edit task; render txtInput for editing when edit-icon[pencil] clicked" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="actions_test_js - 2018.01.17 at 17h 10m 55s.xml">
+      <configuration name="actions.test.js" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="###_Tasks_tests____edit_task__render_txtInput_for_editing_when_edit-icon[pencil]_clicked - 2018.01.16 at 14h 35m 56s.xml">
-      <configuration name="### Tasks tests.&gt;&gt; edit task; render txtInput for editing when edit-icon[pencil] clicked" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="reducers_tests_js - 2018.01.17 at 17h 10m 49s.xml">
+      <configuration name="reducers.tests.js" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="402138000" />
+    <option name="totallyTimeSpent" value="429010000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="124" y="81" width="1857" height="1092" extended-state="6" />
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15148248" sideWeight="0.49456522" order="2" side_tool="false" content_ui="tabs" />
@@ -710,10 +799,11 @@
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16385303" sideWeight="0.5018868" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30080864" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328807" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297769" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3326713" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28599802" sideWeight="0.49811321" order="10" side_tool="false" content_ui="tabs" x="65" y="324" width="1855" height="421" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22045681" sideWeight="0.49811321" order="10" side_tool="false" content_ui="tabs" x="65" y="324" width="1855" height="421" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17574124" sideWeight="0.5054348" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39961204" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -722,7 +812,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -731,20 +820,20 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16385303" sideWeight="0.5018868" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28897715" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18544474" sideWeight="0.49456522" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328807" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297769" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28599802" sideWeight="0.49811321" order="10" side_tool="false" content_ui="tabs" x="65" y="324" width="1855" height="421" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15148248" sideWeight="0.49456522" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30080864" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17574124" sideWeight="0.5054348" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17574124" sideWeight="0.5054348" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39961204" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -790,7 +879,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add dependencies" />
     <MESSAGE value="add layout, reducers, tasklists component; change react-router version 4.0.2=&gt;3.0.5" />
     <MESSAGE value="delete standart react-App files; add link to bootstrap" />
     <MESSAGE value="add getting tasklists from backend" />
@@ -815,18 +903,12 @@
     <MESSAGE value="Action tests - in progress" />
     <MESSAGE value="reducers tests - in progress" />
     <MESSAGE value="tests are finished. Authorization with 'onEnter' attribute" />
-    <option name="LAST_COMMIT_MESSAGE" value="tests are finished. Authorization with 'onEnter' attribute" />
+    <MESSAGE value="AuthWrapper is deleted. Added 'onEnter' attr for 'sign_in'/'sign_up' routes." />
+    <option name="LAST_COMMIT_MESSAGE" value="AuthWrapper is deleted. Added 'onEnter' attr for 'sign_in'/'sign_up' routes." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/__tests__/actions.test.js</url>
-          <line>36</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="32" />
+      <option name="time" value="35" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -959,13 +1041,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/actionTypes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="39" column="61" lean-forward="false" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/reducers/editedList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -973,74 +1048,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/__tests__/layout.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/__mock-data__/auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/selectors.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="14" column="49" lean-forward="true" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/__tests__/newTask.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="39" column="7" lean-forward="false" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/api/__mocks__/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="723">
-          <caret line="129" column="61" lean-forward="false" selection-start-line="129" selection-start-column="61" selection-end-line="129" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/__tests__/actions.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="738">
-          <caret line="106" column="35" lean-forward="false" selection-start-line="106" selection-start-column="35" selection-end-line="106" selection-end-column="35" />
-          <folding>
-            <element signature="e#2291#2695#0" expanded="false" />
-            <element signature="e#2747#3196#0" expanded="false" />
-            <element signature="e#3673#4101#0" expanded="false" />
-            <element signature="e#4593#5027#0" expanded="false" />
-            <element signature="e#5079#5452#0" expanded="false" />
-            <element signature="e#5500#5924#0" expanded="false" />
-            <element signature="e#6270#6551#0" expanded="false" />
-            <element signature="e#6606#13000#0" expanded="false" />
-            <element signature="e#6732#7124#0" expanded="false" />
-            <element signature="e#7172#7609#0" expanded="false" />
-            <element signature="e#7661#8054#0" expanded="false" />
-            <element signature="e#8102#8539#0" expanded="false" />
-            <element signature="e#8591#8966#0" expanded="false" />
-            <element signature="e#9014#9440#0" expanded="false" />
-            <element signature="e#9498#9912#0" expanded="false" />
-            <element signature="e#9966#10419#0" expanded="false" />
-            <element signature="e#10475#10878#0" expanded="false" />
-            <element signature="e#10930#11379#0" expanded="false" />
-            <element signature="e#11437#11850#0" expanded="false" />
-            <element signature="e#11904#12363#0" expanded="false" />
-            <element signature="e#12403#12668#0" expanded="false" />
-            <element signature="e#12709#12996#0" expanded="false" />
-            <element signature="e#13176#13571#0" expanded="false" />
-            <element signature="e#13619#14055#0" expanded="false" />
-            <element signature="e#14548#14978#0" expanded="false" />
-            <element signature="e#15021#15403#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1058,21 +1069,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/__tests__/listHeader.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="12" column="27" lean-forward="false" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/__mock-data__/lists.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="307">
           <caret line="36" column="42" lean-forward="true" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
-          <folding>
-            <element signature="e#1098#1250#0" expanded="false" />
-            <element signature="e#1282#1819#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1088,34 +1088,6 @@
         <state relative-caret-position="378">
           <caret line="29" column="21" lean-forward="false" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/__tests__/reducers.tests.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="577">
-          <caret line="271" column="49" lean-forward="false" selection-start-line="271" selection-start-column="21" selection-end-line="271" selection-end-column="49" />
-          <folding>
-            <element signature="e#527#1196#0" expanded="false" />
-            <element signature="e#1252#1889#0" expanded="false" />
-            <element signature="e#1691#1885#0" expanded="false" />
-            <element signature="e#1939#3580#0" expanded="false" />
-            <element signature="e#3631#5160#0" expanded="false" />
-            <element signature="e#3718#3775#0" expanded="false" />
-            <element signature="e#3846#4042#0" expanded="false" />
-            <element signature="e#4117#4325#0" expanded="false" />
-            <element signature="e#4396#4592#0" expanded="false" />
-            <element signature="e#4667#4884#0" expanded="false" />
-            <element signature="e#4935#5155#0" expanded="false" />
-            <element signature="e#5298#5355#0" expanded="false" />
-            <element signature="e#5431#5632#0" expanded="false" />
-            <element signature="e#5712#5957#0" expanded="false" />
-            <element signature="e#6028#6224#0" expanded="false" />
-            <element signature="e#6295#6512#0" expanded="false" />
-            <element signature="e#6563#6783#0" expanded="false" />
-            <element signature="e#6846#7094#0" expanded="false" />
-            <element signature="e#7761#7962#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1190,14 +1162,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/reducers/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -1208,101 +1172,236 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cookies.js">
+    <entry file="file://$PROJECT_DIR$/src/components/authenticatedWrapper/index.js" />
+    <entry file="file://$PROJECT_DIR$/src/actionTypes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="595">
+          <caret line="63" column="58" lean-forward="false" selection-start-line="63" selection-start-column="58" selection-end-line="63" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/tasksOfList/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="31" column="51" lean-forward="false" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/api/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state relative-caret-position="847">
+          <caret line="106" column="1" lean-forward="false" selection-start-line="106" selection-start-column="1" selection-end-line="106" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cookies.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/__mocks__/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="134" column="45" lean-forward="false" selection-start-line="134" selection-start-column="45" selection-end-line="134" selection-end-column="45" />
           <folding>
-            <element signature="e#602#768#0" expanded="false" />
-            <element signature="e#812#987#0" expanded="false" />
-            <element signature="e#1031#1201#0" expanded="false" />
-            <element signature="e#1247#1411#0" expanded="false" />
-            <element signature="e#1466#1663#0" expanded="false" />
-            <element signature="e#1708#1878#0" expanded="false" />
-            <element signature="e#1924#2088#0" expanded="false" />
-            <element signature="e#2140#2319#0" expanded="false" />
-            <element signature="e#2369#2546#0" expanded="false" />
-            <element signature="e#2598#2777#0" expanded="false" />
+            <element signature="n#!!block;n#fetchListTasks#0" expanded="false" />
+            <element signature="n#!!block;n#updateList#0" expanded="false" />
+            <element signature="n#!!block;n#deleteList#0" expanded="false" />
+            <element signature="n#!!block;n#createTask#0" expanded="false" />
+            <element signature="n#!!block;n#updateTask#0" expanded="false" />
+            <element signature="n#!!block;n#deleteTask#0" expanded="false" />
+            <element signature="n#!!block;n#toggleDoneStatus#0" expanded="false" />
+            <element signature="n#!!block;n#taskPositionUp#0" expanded="false" />
+            <element signature="n#!!block;n#taskPositionDown#0" expanded="false" />
+            <element signature="n#!!block;n#signUp#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__mock-data__/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__tests__/layout.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="63" lean-forward="false" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+            <element signature="e#327#561#0" expanded="false" />
+            <element signature="e#638#1073#0" expanded="false" />
+            <element signature="e#1154#1657#0" expanded="false" />
+            <element signature="e#1722#2283#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/layout/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#38#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__tests__/listHeader.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#51#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#24#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__tests__/reducers.tests.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="93" column="13" lean-forward="false" selection-start-line="93" selection-start-column="13" selection-end-line="93" selection-end-column="13" />
+          <folding>
+            <element signature="e#527#1196#0" expanded="false" />
+            <element signature="e#1252#1889#0" expanded="false" />
+            <element signature="e#1691#1885#0" expanded="false" />
+            <element signature="e#2026#2190#0" expanded="false" />
+            <element signature="e#3354#3973#0" expanded="false" />
+            <element signature="e#4029#5558#0" expanded="false" />
+            <element signature="e#4116#4173#0" expanded="false" />
+            <element signature="e#4244#4440#0" expanded="false" />
+            <element signature="e#4515#4723#0" expanded="false" />
+            <element signature="e#4794#4990#0" expanded="false" />
+            <element signature="e#5065#5282#0" expanded="false" />
+            <element signature="e#5333#5553#0" expanded="false" />
+            <element signature="e#5696#5753#0" expanded="false" />
+            <element signature="e#5829#6030#0" expanded="false" />
+            <element signature="e#6110#6355#0" expanded="false" />
+            <element signature="e#6426#6622#0" expanded="false" />
+            <element signature="e#6693#6910#0" expanded="false" />
+            <element signature="e#6961#7181#0" expanded="false" />
+            <element signature="e#7244#7492#0" expanded="false" />
+            <element signature="e#7548#7795#0" expanded="false" />
+            <element signature="e#7853#8106#0" expanded="false" />
+            <element signature="e#8159#8360#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="936">
+          <caret line="52" column="13" lean-forward="true" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#74#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__tests__/actions.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="538" column="39" lean-forward="false" selection-start-line="538" selection-start-column="39" selection-end-line="538" selection-end-column="39" />
+          <folding>
+            <element signature="e#1752#6598#0" expanded="false" />
+            <element signature="e#2334#2738#0" expanded="false" />
+            <element signature="e#2790#3239#0" expanded="false" />
+            <element signature="e#3716#4144#0" expanded="false" />
+            <element signature="e#4636#5070#0" expanded="false" />
+            <element signature="e#5122#5495#0" expanded="false" />
+            <element signature="e#6313#6594#0" expanded="false" />
+            <element signature="e#6649#13086#0" expanded="false" />
+            <element signature="e#6818#7210#0" expanded="false" />
+            <element signature="e#7258#7695#0" expanded="false" />
+            <element signature="e#7747#8140#0" expanded="false" />
+            <element signature="e#8188#8625#0" expanded="false" />
+            <element signature="e#8677#9052#0" expanded="false" />
+            <element signature="e#9100#9526#0" expanded="false" />
+            <element signature="e#9584#9998#0" expanded="false" />
+            <element signature="e#10052#10505#0" expanded="false" />
+            <element signature="e#10561#10964#0" expanded="false" />
+            <element signature="e#11016#11465#0" expanded="false" />
+            <element signature="e#11523#11936#0" expanded="false" />
+            <element signature="e#11990#12449#0" expanded="false" />
+            <element signature="e#12489#12754#0" expanded="false" />
+            <element signature="e#12795#13082#0" expanded="false" />
+            <element signature="e#13305#13700#0" expanded="false" />
+            <element signature="e#13748#14184#0" expanded="false" />
+            <element signature="e#14240#14629#0" expanded="false" />
+            <element signature="e#14677#15107#0" expanded="false" />
+            <element signature="e#15150#15532#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/selectors.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="378" column="36" lean-forward="false" selection-start-line="378" selection-start-column="36" selection-end-line="378" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/tasklists/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="31" column="16" lean-forward="true" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+            <marker date="1516204510363" expanded="true" signature="809:979" ph="..." />
+            <marker date="1516204510363" expanded="true" signature="853:973" ph="..." />
+            <marker date="1516204510363" expanded="true" signature="1081:1659" ph="..." />
+            <marker date="1516204510363" expanded="true" signature="1138:1200" ph="..." />
+            <marker date="1516204510363" expanded="true" signature="1334:1640" ph="..." />
+            <marker date="1516204510363" expanded="true" signature="1363:1515" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/signIn/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1134">
-          <caret line="71" column="34" lean-forward="false" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="350" column="13" lean-forward="false" selection-start-line="350" selection-start-column="13" selection-end-line="350" selection-end-column="13" />
+        <state relative-caret-position="558">
+          <caret line="39" column="22" lean-forward="true" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/tasklists/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/authenticatedWrapper/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/layout/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="51" column="12" lean-forward="false" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/tasksOfList/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

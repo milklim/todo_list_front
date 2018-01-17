@@ -27,8 +27,8 @@ export class SignIn extends Component {
     }
 
     signIn = (event) => {
-        event.preventDefault()
         this.props.userSignIn(this.state.email, this.state.password)
+        event.preventDefault()
     }
 
     render(){

@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
-import {browserHistory} from 'react-router'
 import {connect} from 'react-redux'
+import {browserHistory} from 'react-router'
 
 import TasksOfList from '../tasksOfList'
 import NewTaskSection from '../newTaskSection'
@@ -21,10 +21,10 @@ export class Tasklists extends Component {
     componentWillMount () {
         this.props.fetchLists()
     }
-
-    componentWillReceiveProps(nextProps) {
+    componentWillReceiveProps(nextProps){
         if (!nextProps.authInfo.isAuthenticate)
-            browserHistory.replace("/sign_in")    }
+            browserHistory.replace("/sign_in")
+    }
 
     createList = (name) => this.props.createList(name)
 

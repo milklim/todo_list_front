@@ -3,11 +3,16 @@ import {connect} from 'react-redux'
 import {Link} from 'react-router'
 
 import {
-    userSignOut
+    userSignOut,
+    validateToken
 } from '../../actions/index'
 
 
 export class Layout extends Component {
+
+    componentWillMount(){
+        this.props.validateToken();
+    }
 
     renderSignBtns = () => {
             if (this.props.isLoggedIn)
@@ -50,6 +55,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = {
     userSignOut,
+    validateToken
 }
 
 

@@ -13,17 +13,21 @@ describe('### Layout tests', () => {
     let component;
 
     it('>> renders without crashing when not logged in', () => {
+        const validateToken = jest.fn();
         component = shallow(
-                <Layout/>
+                <Layout
+                    validateToken = { validateToken }
+                />
             );
         expect(component).toMatchSnapshot();
     });
 
-
     it('>> if user is not logged in, renders SignIn/SignUp links', () => {
+        const validateToken = jest.fn();
         component = shallow(
             <Layout
                 isLoggedIn = { false }
+                validateToken = { validateToken }
             />
         );
 
@@ -35,10 +39,12 @@ describe('### Layout tests', () => {
 
     it('>> if user is logged in, renders user Email and SignOut btn ', () => {
         const usrName = 'mail@i.ua';
+        const validateToken = jest.fn();
         component = shallow(
             <Layout
                 isLoggedIn = { true }
                 userName = { usrName }
+                validateToken = { validateToken }
             />
         )
 
@@ -49,16 +55,17 @@ describe('### Layout tests', () => {
         expect(usr.text()).toEqual('User: ' + usrName);
     });
 
-
     it('>> clicking on SignOut btn calls proper func', () => {
         const usrName = 'mail@i.ua';
         const signOut = jest.fn();
+        const validateToken = jest.fn();
 
         component = shallow(
             <Layout
                 isLoggedIn = { true }
                 userName = { usrName }
                 userSignOut = { signOut }
+                validateToken = { validateToken }
             />
         );
 
@@ -66,6 +73,7 @@ describe('### Layout tests', () => {
         btnSignOut.simulate('click');
 
         expect(signOut).toHaveBeenCalled();
+        expect(validateToken).toHaveBeenCalled();
     });
 
 
