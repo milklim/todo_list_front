@@ -34,7 +34,6 @@ describe('### ListHeader - On Edit Name', () => {
 
         component.find('i.btn-edit').simulate('click');
         expect(component.find('input.editField')).toHaveLength(1);
-
     });
 
     it('>> show edit field when list-header double-clicked', () => {

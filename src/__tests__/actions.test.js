@@ -139,7 +139,7 @@ describe('### Actions | Lists - Tests', () => {
             },
             {
                 type: LIST_UPDATE_SUCCESS,
-                payload: updatedList
+                payload: updatedList()
             }
         ];
 

@@ -1,6 +1,6 @@
 import {getCookie, setAuthCookies, removeAuthCookies} from '../cookies'
 import axios from 'axios'
-// const axios = require('axios')
+
 // const baseUrl = 'http://localhost:3000/'
 const baseUrl = 'https://api-ornull-list.herokuapp.com/'
 

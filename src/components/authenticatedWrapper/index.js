@@ -3,7 +3,7 @@ import {connect} from 'react-redux'
 import {browserHistory} from 'react-router'
 
 class AuthenticatedWrapper extends Component {
-    componentDidMount() {
+    componentWillMount() {
         if (!this.props.isLoggedIn) {
             browserHistory.replace("/sign_in")
         }

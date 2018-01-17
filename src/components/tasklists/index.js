@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import {browserHistory} from 'react-router'
 import {connect} from 'react-redux'
 
 import TasksOfList from '../tasksOfList'
@@ -11,14 +12,19 @@ import {
 } from '../../actions'
 
 import {
+    getAuthInfo,
     getLists
 } from '../../selectors'
 
 export class Tasklists extends Component {
 
-    componentDidMount () {
+    componentWillMount () {
         this.props.fetchLists()
     }
+
+    componentWillReceiveProps(nextProps) {
+        if (!nextProps.authInfo.isAuthenticate)
+            browserHistory.replace("/sign_in")    }
 
     createList = (name) => this.props.createList(name)
 
@@ -46,7 +52,7 @@ export class Tasklists extends Component {
 
                 <div className="w3-container w3-padding-16 w3-center">
                     <button
-                        className="w3-btn w3-round w3-ripple w3-flat-nephritis"
+                        className="w3-btn w3-round w3-ripple w3-flat-nephritis btn-new-list"
                         onClick={this.createList.bind(this, 'New Tasklist')}
                     >
                         Add List
@@ -59,6 +65,7 @@ export class Tasklists extends Component {
 
 const mapStateToProps = (state) => {
     return {
+        authInfo: getAuthInfo(state),
         lists: getLists(state)
     }
 }

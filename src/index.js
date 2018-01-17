@@ -22,11 +22,17 @@ ReactDOM.render(
             <Route component={Layout}>
                 <Route path='/sign_up' component={SignUp}/>
                 <Route path='/sign_in' component={SignIn}/>
-                <Route component={AuthenticatedWrapper}>
-                    <Route path='/' component={Tasklists} />
-                </Route>
+                <Route path='/' component={Tasklists} onEnter = { requireAuth }/>
             </Route>
         </Router>
     </Provider>,
     document.getElementById('root')
 )
+
+
+function requireAuth (nextState, replace, cb) {
+    if (!store.getState().auth.isAuthenticate) {
+        browserHistory.replace('/sign_in');
+    }
+    return cb();
+}

@@ -29,7 +29,6 @@ describe('### SignIn Component tests', () => {
         expect(component).toMatchSnapshot();
     });
 
-
     it('>> state has same values as in text Inputs', () => {
         fillTxtInput('form input[type="email"]', email);
         fillTxtInput('form input[type="password"]', pass);

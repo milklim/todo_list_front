@@ -63,7 +63,7 @@ export class ListHeader extends Component {
                 <div className='w3-cell-row w3-flat-belize-hole lst-header'>
 
                     <div className="w3-container w3-cell w3-cell-middle lst-icon-main">
-                        <i className="fa fa-calendar"></i>
+                        <i className="fa fa-calendar"> </i>
                     </div>
 
                     <div className="w3-container w3-cell w3-cell-left lst-title"
@@ -75,7 +75,7 @@ export class ListHeader extends Component {
                     <div className="w3-container w3-cell w3-cell-middle w3-xlarge w3-hover-text-dark-grey lst-icon">
                         <i className="fa fa-pencil btn-edit"
                            onClick={this.editList.bind(this, list)}
-                        ></i>
+                        > </i>
                     </div>
                     <div className="w3-container w3-cell w3-cell-middle w3-padding w3-xlarge lst-icon-divider">
                         <i className="fa">|</i>
@@ -83,7 +83,7 @@ export class ListHeader extends Component {
                     <div className="w3-container w3-cell w3-cell-middle w3-xlarge w3-hover-text-deep-orange lst-icon">
                         <i className="fa fa-trash-o btn-delete"
                            onClick={this.deleteList.bind(this, list.id)}
-                        ></i>
+                        > </i>
                     </div>
 
                 </div>

@@ -90,7 +90,7 @@ export class TasksOfList extends Component {
                     />
                 </div>
 
-                <div className="w3-cell w3-border-right w3-border-left lst-divide-cell"></div>
+                <div className="w3-cell w3-border-right w3-border-left lst-divide-cell"> </div>
 
 
                 <div className="w3-container w3-cell w3-cell-middle w3-border-right lst-taskcontent"
@@ -103,18 +103,21 @@ export class TasksOfList extends Component {
 
 
                 <div className="w3-container w3-cell w3-cell-middle w3-center w3-xlarge lst-icon">
-                    <div className="arrow-up" onClick={this.moveUp.bind(this, task.id, task.position)}></div>
-                    <div className="arrow-down" onClick={this.moveDown.bind(this, task.id, task.position)}></div>
+                    <div className="arrow-up"
+                         onClick={this.moveUp.bind(this, task.id, task.position)}> </div>
+                    <div className="arrow-down"
+                         onClick={this.moveDown.bind(this, task.id, task.position)}> </div>
                 </div>
                 <div className="w3-container w3-cell w3-cell-middle w3-center lst-icon">
                     <div className="w3-border-right w3-border-left w3-xlarge">
                         <i className="fa fa-pencil w3-hover-text-black btn-edit"
                            onClick={this.editTask.bind(this, task)}
-                        ></i>
+                        > </i>
                     </div>
                 </div>
                 <div className="w3-container w3-cell w3-cell-middle w3-xlarge w3-center lst-icon">
-                    <i className="fa fa-trash-o w3-hover-text-red" onClick={this.deleteTask.bind(this, task.id)}></i>
+                    <i className="fa fa-trash-o w3-hover-text-red btn-delete"
+                       onClick={this.deleteTask.bind(this, task.id)}> </i>
                 </div>
 
             </div>
