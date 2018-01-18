@@ -8,6 +8,7 @@ import {
 
 import {getAuthInfo} from "../../selectors";
 
+
 export class SignIn extends Component {
     constructor(props){
         super(props)
@@ -23,6 +24,10 @@ export class SignIn extends Component {
 
     componentWillReceiveProps(nextProps) {
         if (nextProps.authInfo.isAuthenticate)
+            browserHistory.replace('/')
+    }
+    componentWillMount(){
+        if (this.props.authInfo.isAuthenticate)
             browserHistory.replace('/')
     }
 

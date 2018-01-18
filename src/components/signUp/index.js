@@ -23,6 +23,10 @@ export class SignUp extends Component {
     handleChangePass(event) { this.setState({password: event.target.value}) }
     handleChangePassConf(event) { this.setState({password_confirmation: event.target.value}) }
 
+    componentWillMount(){
+        if (this.props.authInfo.isAuthenticate)
+            browserHistory.replace('/')
+    }
     componentWillReceiveProps(nextProps) {
         if (nextProps.authInfo.isAuthenticate)
             browserHistory.replace('/')

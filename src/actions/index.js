@@ -1,4 +1,3 @@
-import {browserHistory} from 'react-router'
 import {getAuthCookies} from '../cookies'
 import {
     FETCH_LISTS_START,
@@ -52,6 +51,7 @@ import {
     VALIDATE_TOKEN_START,
     VALIDATE_TOKEN_SUCCESS,
     VALIDATE_TOKEN_FAILURE,
+    RESET_TOKEN_VALIDATION,
 
 } from '../actionTypes'
 
@@ -402,4 +402,8 @@ export const validateToken = () => async (dispatch) => {
             error: true
         })
     }
+}
+
+export const resetTokenValidation = () => dispatch => {
+    dispatch({type: RESET_TOKEN_VALIDATION})
 }

@@ -1,4 +1,4 @@
-import Cookies, {Cookie} from 'js-cookie'
+import Cookies from 'js-cookie'
 
 export const setAuthCookies = (headers) => {
     setCookie('access-token', headers['access-token'])
@@ -31,6 +31,7 @@ export const removeAuthCookies = () => {
 }
 
 export const isAuthCookieExist = () => {
-    console.log('isAuthCookieExist', Cookie('uid') && Cookie('access-token'))
-    return Cookie('uid') && Cookie('access-token')
+    if (Cookies.get('uid') && Cookies.get('access-token'))
+        return true
+    return false
 }

@@ -9,6 +9,7 @@ USER_SIGN_OUT_SUCCESS,
 VALIDATE_TOKEN_START,
 VALIDATE_TOKEN_SUCCESS,
 VALIDATE_TOKEN_FAILURE,
+RESET_TOKEN_VALIDATION,
 } from '../actionTypes'
 
 
@@ -44,6 +45,7 @@ export default (state = initialState, {type, payload}) => {
         case VALIDATE_TOKEN_FAILURE:
             return {
                 'isAuthenticate': false,
+                'tokenValidating': false,
                 'userName': notLoggedName
             }
         case VALIDATE_TOKEN_START:
@@ -55,7 +57,12 @@ export default (state = initialState, {type, payload}) => {
                 'userName': getCookie('uid'),
                 'headers': getAuthCookies()
             }
-
+        case RESET_TOKEN_VALIDATION:
+            return {
+                'isAuthenticate': false,
+                'tokenValidating': false,
+                'userName': notLoggedName
+            }
         default:
             return state
     }

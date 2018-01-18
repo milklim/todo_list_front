@@ -5,7 +5,8 @@ import {isAuthCookieExist} from '../../cookies'
 
 import {
     userSignOut,
-    validateToken
+    validateToken,
+    resetTokenValidation,
 } from '../../actions/index'
 
 import {
@@ -16,9 +17,10 @@ import {
 export class Layout extends Component {
 
     componentWillMount(){
-        if(isAuthCookieExist) {
+        if(isAuthCookieExist())
             this.props.validateToken();
-        }
+        else
+            this.props.resetTokenValidation();
     }
 
     renderSignBtns = () => {
@@ -57,15 +59,13 @@ export class Layout extends Component {
 const mapStateToProps = (state) => {
     return {
         authInfo: getAuthInfo(state),
-
-        // userName: state.auth.userName,
-        // isLoggedIn: state.auth.isAuthenticate
     }
 }
 
 const mapDispatchToProps = {
     userSignOut,
-    validateToken
+    validateToken,
+    resetTokenValidation,
 }
 
 

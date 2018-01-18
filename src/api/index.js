@@ -1,4 +1,4 @@
-import {getCookie, setAuthCookies, removeAuthCookies} from '../cookies'
+import {setAuthCookies, removeAuthCookies} from '../cookies'
 import axios from 'axios'
 
 // const baseUrl = 'http://localhost:3000/'
@@ -7,7 +7,6 @@ const baseUrl = 'https://api-ornull-list.herokuapp.com/'
 
 
 export const fetchLists = async (headers) => {
-    console.log('api.fetchLists: ', headers)
     const response = await axios.get(baseUrl + 'v1/lists', { headers })
     setAuthCookies(response.headers)
     return response.data
@@ -102,6 +101,5 @@ export const signOut = async(headers) => {
 
 export const validateToken = async(headers)  => {
     const response = await axios.get(baseUrl + 'auth/validate_token', { headers })
-    console.log('api.validateToken: ', response)
     return response
 }

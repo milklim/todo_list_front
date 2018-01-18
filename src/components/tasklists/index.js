@@ -19,6 +19,8 @@ import {
 export class Tasklists extends Component {
 
     componentWillMount () {
+        if (!this.props.authInfo.isAuthenticate)
+            browserHistory.replace("/sign_in")
         this.props.fetchLists()
     }
     componentWillReceiveProps(nextProps){
