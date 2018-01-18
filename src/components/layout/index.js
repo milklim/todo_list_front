@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import {Link} from 'react-router'
-import {isAuthCookieExist} from '../../cookies'
+import {isAuthCookieExist} from '../../cookies/index'
 
 import {
     userSignOut,
@@ -39,7 +39,7 @@ export class Layout extends Component {
     }
     render() {
         if (this.props.authInfo.tokenValidating)
-            return <div id='spiner'>Loading...</div>
+            return <div className='loader w3-center'>Loading...</div>
         else return (
             <div className="w3-content">
 

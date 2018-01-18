@@ -1,7 +1,7 @@
 import * as act from '../actionTypes';
 import * as lstMock from '../__mock-data__/lists';
 import * as tskMock from "../__mock-data__/tasks";
-import {signUpResponse, signInResponse} from "../__mock-data__/auth";
+import {signUpResponse, signInResponse, mockAuthCookies} from "../__mock-data__/auth";
 
 import editedList from "../reducers/editedList";
 import editedTask from "../reducers/editedTask";
@@ -10,7 +10,7 @@ import lists from '../reducers/lists';
 import tasks from '../reducers/tasks';
 import combineReducers from '../reducers/index';
 import {VALIDATE_TOKEN_START} from "../actionTypes";
-
+jest.mock('../cookies');
 
 describe('### Reducer | editedList - Tests', () => {
 
@@ -95,9 +95,10 @@ describe('### Reducer | auth - Tests', () => {
 
     it('>>> handle VALIDATE_TOKEN_SUCCESS', () => {
         state = {
-            isAuthenticate:  false,
-            tokenValidating: true,
-            userName:  'Not logged in'
+            headers: mockAuthCookies,
+            isAuthenticate:  true,
+            tokenValidating: false,
+            userName: mockAuthCookies.uid
         };
         action = {
             type: act.VALIDATE_TOKEN_SUCCESS,

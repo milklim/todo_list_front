@@ -99,11 +99,9 @@ describe('### Layout tests', () => {
             />
         );
 
-        const spinerTag = component.find('#spiner');
+        const spinerTag = component.find('div.loader');
 
         expect(spinerTag).toHaveLength(1);
     });
-
-
 
 });

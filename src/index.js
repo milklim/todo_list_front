@@ -1,4 +1,5 @@
 import './styles_v2.css'
+import './loader.css'
 
 import React from 'react'
 import ReactDOM from 'react-dom'

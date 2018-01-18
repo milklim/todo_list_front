@@ -1,3 +1,5 @@
+import {getAuthCookies, getCookie} from "../cookies";
+
 export const email = 'user@mail.com';
 export const pass = '12345678';
 
@@ -13,3 +15,9 @@ export const signUpResponse = {
 };
 
 export const signInResponse = signUpResponse;
+
+export const mockAuthCookies = {
+        'access-token': signUpResponse['access-token'],
+        'client': signUpResponse['client'],
+        'uid': signUpResponse['uid']
+}

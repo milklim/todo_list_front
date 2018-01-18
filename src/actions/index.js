@@ -1,4 +1,4 @@
-import {getAuthCookies} from '../cookies'
+import {getAuthCookies} from '../cookies/index'
 import {
     FETCH_LISTS_START,
     FETCH_LISTS_SUCCESS,

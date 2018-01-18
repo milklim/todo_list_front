@@ -1,4 +1,4 @@
-import {getCookie, getAuthCookies} from "../cookies";
+import {getCookie, getAuthCookies} from "../cookies/index";
 
 import {
 USER_SIGN_UP_SUCCESS,
@@ -14,7 +14,7 @@ RESET_TOKEN_VALIDATION,
 
 
 // const initialState = {
-//     'isAuthenticate': Cookie('uid') && Cookie('access-token'),
+//     'isAuthenticate': Cookie('uid') && Cookie('access-token') ? true : false,
 //     'userName': Cookie('uid') ? Cookie('uid') : 'Not logged in'
 // }
 const notLoggedName = 'Not logged in'
