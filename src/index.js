@@ -30,7 +30,7 @@ ReactDOM.render(
 
 
 function requireAuth (nextState, replace, cb) {
-    if (!store.getState().auth.isAuthenticate) {
+    if (!store.getState().auth.isAuthenticate && !store.getState().auth.tokenValidating) {
         browserHistory.replace('/sign_in');
     }
     return cb();

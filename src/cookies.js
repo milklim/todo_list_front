@@ -30,6 +30,7 @@ export const removeAuthCookies = () => {
     Cookies.remove('uid')
 }
 
-export const isLoggedFromCookies = () => {
+export const isAuthCookieExist = () => {
+    console.log('isAuthCookieExist', Cookie('uid') && Cookie('access-token'))
     return Cookie('uid') && Cookie('access-token')
 }

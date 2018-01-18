@@ -9,6 +9,7 @@ import auth from "../reducers/auth";
 import lists from '../reducers/lists';
 import tasks from '../reducers/tasks';
 import combineReducers from '../reducers/index';
+import {VALIDATE_TOKEN_START} from "../actionTypes";
 
 
 describe('### Reducer | editedList - Tests', () => {
@@ -77,10 +78,32 @@ describe('### Reducer | auth - Tests', () => {
     it('>>> should return the initial state', () => {
         state = {
             isAuthenticate:  false,
+            tokenValidating: true,
             userName:  'Not logged in'
         };
         expect(auth(undefined, {})).toEqual(state);
+    });
 
+    it('>>> VALIDATE_TOKEN_START: should return current state', () => {
+        state = {
+            isAuthenticate:  false,
+            tokenValidating: true,
+            userName:  'Not logged in'
+        };
+        expect(auth(state, {type: act.VALIDATE_TOKEN_START})).toEqual(state);
+    });
+
+    it('>>> handle VALIDATE_TOKEN_SUCCESS', () => {
+        state = {
+            isAuthenticate:  false,
+            tokenValidating: true,
+            userName:  'Not logged in'
+        };
+        action = {
+            type: act.VALIDATE_TOKEN_SUCCESS,
+            payload: signUpResponse
+        };
+        expect(auth(state, action)).toEqual(state);
     });
 
     it('>>> handle USER_SIGN_UP_SUCCESS', () => {

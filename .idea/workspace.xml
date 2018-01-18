@@ -3,22 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="428d5f07-e8f7-49e8-8e22-fc0689e53684" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/__mock-data__/auth.js" afterPath="$PROJECT_DIR$/src/__mock-data__/auth.js" />
-      <change beforePath="$PROJECT_DIR$/src/__tests__/actions.test.js" afterPath="$PROJECT_DIR$/src/__tests__/actions.test.js" />
       <change beforePath="$PROJECT_DIR$/src/__tests__/layout.test.js" afterPath="$PROJECT_DIR$/src/__tests__/layout.test.js" />
-      <change beforePath="$PROJECT_DIR$/src/__tests__/listHeader.test.js" afterPath="$PROJECT_DIR$/src/__tests__/listHeader.test.js" />
       <change beforePath="$PROJECT_DIR$/src/__tests__/reducers.tests.js" afterPath="$PROJECT_DIR$/src/__tests__/reducers.tests.js" />
-      <change beforePath="$PROJECT_DIR$/src/actionTypes.js" afterPath="$PROJECT_DIR$/src/actionTypes.js" />
-      <change beforePath="$PROJECT_DIR$/src/actions/index.js" afterPath="$PROJECT_DIR$/src/actions/index.js" />
-      <change beforePath="$PROJECT_DIR$/src/api/__mocks__/index.js" afterPath="$PROJECT_DIR$/src/api/__mocks__/index.js" />
-      <change beforePath="$PROJECT_DIR$/src/api/index.js" afterPath="$PROJECT_DIR$/src/api/index.js" />
       <change beforePath="$PROJECT_DIR$/src/components/layout/index.js" afterPath="$PROJECT_DIR$/src/components/layout/index.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/signIn/index.js" afterPath="$PROJECT_DIR$/src/components/signIn/index.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/tasklists/index.js" afterPath="$PROJECT_DIR$/src/components/tasklists/index.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/tasksOfList/index.js" afterPath="$PROJECT_DIR$/src/components/tasksOfList/index.js" />
       <change beforePath="$PROJECT_DIR$/src/cookies.js" afterPath="$PROJECT_DIR$/src/cookies.js" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
       <change beforePath="$PROJECT_DIR$/src/reducers/auth.js" afterPath="$PROJECT_DIR$/src/reducers/auth.js" />
-      <change beforePath="$PROJECT_DIR$/src/selectors.js" afterPath="$PROJECT_DIR$/src/selectors.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -65,90 +55,79 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="actions.test.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/__tests__/actions.test.js">
+      <file leaf-file-name="reducers.tests.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/__tests__/reducers.tests.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="538" column="39" lean-forward="false" selection-start-line="538" selection-start-column="39" selection-end-line="538" selection-end-column="39" />
-              <folding>
-                <element signature="e#1752#6598#0" expanded="false" />
-                <element signature="e#2334#2738#0" expanded="false" />
-                <element signature="e#2790#3239#0" expanded="false" />
-                <element signature="e#3716#4144#0" expanded="false" />
-                <element signature="e#4636#5070#0" expanded="false" />
-                <element signature="e#5122#5495#0" expanded="false" />
-                <element signature="e#6313#6594#0" expanded="false" />
-                <element signature="e#6649#13086#0" expanded="false" />
-                <element signature="e#6818#7210#0" expanded="false" />
-                <element signature="e#7258#7695#0" expanded="false" />
-                <element signature="e#7747#8140#0" expanded="false" />
-                <element signature="e#8188#8625#0" expanded="false" />
-                <element signature="e#8677#9052#0" expanded="false" />
-                <element signature="e#9100#9526#0" expanded="false" />
-                <element signature="e#9584#9998#0" expanded="false" />
-                <element signature="e#10052#10505#0" expanded="false" />
-                <element signature="e#10561#10964#0" expanded="false" />
-                <element signature="e#11016#11465#0" expanded="false" />
-                <element signature="e#11523#11936#0" expanded="false" />
-                <element signature="e#11990#12449#0" expanded="false" />
-                <element signature="e#12489#12754#0" expanded="false" />
-                <element signature="e#12795#13082#0" expanded="false" />
-                <element signature="e#13305#13700#0" expanded="false" />
-                <element signature="e#13748#14184#0" expanded="false" />
-                <element signature="e#14240#14629#0" expanded="false" />
-                <element signature="e#14677#15107#0" expanded="false" />
-                <element signature="e#15150#15532#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="selectors.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/selectors.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/actions/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="378" column="36" lean-forward="false" selection-start-line="378" selection-start-column="36" selection-end-line="378" selection-end-column="36" />
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/tasklists/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="31" column="16" lean-forward="true" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+            <state relative-caret-position="296">
+              <caret line="106" column="7" lean-forward="false" selection-start-line="106" selection-start-column="7" selection-end-line="106" selection-end-column="7" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
-                <marker date="1516204510363" expanded="true" signature="809:979" ph="..." />
-                <marker date="1516204510363" expanded="true" signature="853:973" ph="..." />
-                <marker date="1516204510363" expanded="true" signature="1081:1659" ph="..." />
-                <marker date="1516204510363" expanded="true" signature="1138:1200" ph="..." />
-                <marker date="1516204510363" expanded="true" signature="1334:1640" ph="..." />
-                <marker date="1516204510363" expanded="true" signature="1363:1515" ph="..." />
+                <element signature="e#580#1249#0" expanded="false" />
+                <element signature="e#1305#1942#0" expanded="false" />
+                <element signature="e#1744#1938#0" expanded="false" />
+                <element signature="e#4778#6307#0" expanded="false" />
+                <element signature="e#4865#4922#0" expanded="false" />
+                <element signature="e#4993#5189#0" expanded="false" />
+                <element signature="e#5264#5472#0" expanded="false" />
+                <element signature="e#5543#5739#0" expanded="false" />
+                <element signature="e#5814#6031#0" expanded="false" />
+                <element signature="e#6082#6302#0" expanded="false" />
+                <element signature="e#6358#9113#0" expanded="false" />
+                <element signature="e#6445#6502#0" expanded="false" />
+                <element signature="e#6578#6779#0" expanded="false" />
+                <element signature="e#6859#7104#0" expanded="false" />
+                <element signature="e#7175#7371#0" expanded="false" />
+                <element signature="e#7442#7659#0" expanded="false" />
+                <element signature="e#7710#7930#0" expanded="false" />
+                <element signature="e#7993#8241#0" expanded="false" />
+                <element signature="e#8297#8544#0" expanded="false" />
+                <element signature="e#8602#8855#0" expanded="false" />
+                <element signature="e#8908#9109#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/signIn/index.js">
+      <file leaf-file-name="auth.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/__mock-data__/auth.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="39" column="22" lean-forward="true" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+            <state relative-caret-position="54">
+              <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="auth.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/reducers/auth.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="42" column="35" lean-forward="true" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#53#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="32" column="50" lean-forward="false" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/layout/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="521">
+              <caret line="44" column="94" lean-forward="false" selection-start-line="44" selection-start-column="86" selection-end-line="44" selection-end-column="94" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -274,23 +253,23 @@
         <option value="$PROJECT_DIR$/src/__tests__/signIn.test.js" />
         <option value="$PROJECT_DIR$/src/__tests__/tasklists.test.js" />
         <option value="$PROJECT_DIR$/src/components/authenticatedWrapper/index.js" />
-        <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/actionTypes.js" />
-        <option value="$PROJECT_DIR$/src/components/layout/index.js" />
         <option value="$PROJECT_DIR$/src/components/tasksOfList/index.js" />
         <option value="$PROJECT_DIR$/src/api/index.js" />
-        <option value="$PROJECT_DIR$/src/cookies.js" />
-        <option value="$PROJECT_DIR$/src/reducers/auth.js" />
         <option value="$PROJECT_DIR$/src/api/__mocks__/index.js" />
         <option value="$PROJECT_DIR$/src/__mock-data__/auth.js" />
-        <option value="$PROJECT_DIR$/src/__tests__/layout.test.js" />
         <option value="$PROJECT_DIR$/src/__tests__/listHeader.test.js" />
-        <option value="$PROJECT_DIR$/src/__tests__/reducers.tests.js" />
         <option value="$PROJECT_DIR$/src/__tests__/actions.test.js" />
-        <option value="$PROJECT_DIR$/src/actions/index.js" />
         <option value="$PROJECT_DIR$/src/selectors.js" />
-        <option value="$PROJECT_DIR$/src/components/tasklists/index.js" />
         <option value="$PROJECT_DIR$/src/components/signIn/index.js" />
+        <option value="$PROJECT_DIR$/src/cookies.js" />
+        <option value="$PROJECT_DIR$/src/actions/index.js" />
+        <option value="$PROJECT_DIR$/src/components/tasklists/index.js" />
+        <option value="$PROJECT_DIR$/src/components/layout/index.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/__tests__/layout.test.js" />
+        <option value="$PROJECT_DIR$/src/__tests__/reducers.tests.js" />
+        <option value="$PROJECT_DIR$/src/reducers/auth.js" />
       </list>
     </option>
   </component>
@@ -344,6 +323,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -355,6 +336,12 @@
               <item name="todo_list_front" type="b2602c69:ProjectViewProjectNode" />
               <item name="todo_list_front" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="todo_list_front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="todo_list_front" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="__tests__" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="todo_list_front" type="b2602c69:ProjectViewProjectNode" />
@@ -372,14 +359,14 @@
               <item name="todo_list_front" type="b2602c69:ProjectViewProjectNode" />
               <item name="todo_list_front" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="__mocks__" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="todo_list_front" type="b2602c69:ProjectViewProjectNode" />
               <item name="todo_list_front" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="layout" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="todo_list_front" type="b2602c69:ProjectViewProjectNode" />
@@ -411,8 +398,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -444,78 +429,80 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.### Actions | Auth - Tests.&gt;&gt;&gt; userSignOut">
-    <configuration name="### Actions | Auth - Tests" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/src/__tests__/actions.test.js" />
-      <test-names>
-        <test-name value="### Actions | Auth - Tests" />
-      </test-names>
-    </configuration>
-    <configuration name="### Actions | Auth - Tests.&gt;&gt;&gt; userSignOut" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.### Reducer | auth - Tests.&gt;&gt;&gt; handle VALIDATE_TOKEN_SUCCESS">
+    <configuration name="### Layout tests.&gt;&gt; renders without crashing when not logged in" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/__tests__/actions.test.js" />
+      <test-file value="$PROJECT_DIR$/src/__tests__/layout.test.js" />
       <test-names>
-        <test-name value="### Actions | Auth - Tests" />
-        <test-name value="&gt;&gt;&gt; userSignOut" />
+        <test-name value="### Layout tests" />
+        <test-name value="&gt;&gt; renders without crashing when not logged in" />
       </test-names>
     </configuration>
-    <configuration name="### Actions | Lists - Tests" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+    <configuration name="### Reducer | auth - Tests" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/src/__tests__/actions.test.js" />
+      <test-file value="$PROJECT_DIR$/src/__tests__/reducers.tests.js" />
       <test-names>
-        <test-name value="### Actions | Lists - Tests" />
+        <test-name value="### Reducer | auth - Tests" />
       </test-names>
     </configuration>
-    <configuration name="### Actions | Lists - Tests.&gt;&gt;&gt; fetchLists" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+    <configuration name="### Reducer | auth - Tests.&gt;&gt;&gt; VALIDATE_TOKEN_START: should return current state" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/__tests__/actions.test.js" />
+      <test-file value="$PROJECT_DIR$/src/__tests__/reducers.tests.js" />
       <test-names>
-        <test-name value="### Actions | Lists - Tests" />
-        <test-name value="&gt;&gt;&gt; fetchLists" />
+        <test-name value="### Reducer | auth - Tests" />
+        <test-name value="&gt;&gt;&gt; VALIDATE_TOKEN_START: should return current state" />
       </test-names>
     </configuration>
-    <configuration name="### Actions | Tasks - Tests" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+    <configuration name="### Reducer | auth - Tests.&gt;&gt;&gt; handle VALIDATE_TOKEN_SUCCESS" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/src/__tests__/actions.test.js" />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/__tests__/reducers.tests.js" />
       <test-names>
-        <test-name value="### Actions | Tasks - Tests" />
+        <test-name value="### Reducer | auth - Tests" />
+        <test-name value="&gt;&gt;&gt; handle VALIDATE_TOKEN_SUCCESS" />
+      </test-names>
+    </configuration>
+    <configuration name="### Reducer | auth - Tests.&gt;&gt;&gt; should return the initial state" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/__tests__/reducers.tests.js" />
+      <test-names>
+        <test-name value="### Reducer | auth - Tests" />
+        <test-name value="&gt;&gt;&gt; should return the initial state" />
       </test-names>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Jest.### Actions | Lists - Tests.&gt;&gt;&gt; fetchLists" />
-      <item index="1" class="java.lang.String" itemvalue="Jest.### Actions | Lists - Tests" />
-      <item index="2" class="java.lang.String" itemvalue="Jest.### Actions | Tasks - Tests" />
-      <item index="3" class="java.lang.String" itemvalue="Jest.### Actions | Auth - Tests" />
-      <item index="4" class="java.lang.String" itemvalue="Jest.### Actions | Auth - Tests.&gt;&gt;&gt; userSignOut" />
+      <item index="0" class="java.lang.String" itemvalue="Jest.### Layout tests.&gt;&gt; renders without crashing when not logged in" />
+      <item index="1" class="java.lang.String" itemvalue="Jest.### Reducer | auth - Tests" />
+      <item index="2" class="java.lang.String" itemvalue="Jest.### Reducer | auth - Tests.&gt;&gt;&gt; should return the initial state" />
+      <item index="3" class="java.lang.String" itemvalue="Jest.### Reducer | auth - Tests.&gt;&gt;&gt; VALIDATE_TOKEN_START: should return current state" />
+      <item index="4" class="java.lang.String" itemvalue="Jest.### Reducer | auth - Tests.&gt;&gt;&gt; handle VALIDATE_TOKEN_SUCCESS" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Jest.### Actions | Auth - Tests.&gt;&gt;&gt; userSignOut" />
-        <item index="1" class="java.lang.String" itemvalue="Jest.### Actions | Auth - Tests" />
-        <item index="2" class="java.lang.String" itemvalue="Jest.### Actions | Tasks - Tests" />
-        <item index="3" class="java.lang.String" itemvalue="Jest.### Actions | Lists - Tests" />
-        <item index="4" class="java.lang.String" itemvalue="Jest.### Actions | Lists - Tests.&gt;&gt;&gt; fetchLists" />
+        <item index="0" class="java.lang.String" itemvalue="Jest.### Reducer | auth - Tests.&gt;&gt;&gt; handle VALIDATE_TOKEN_SUCCESS" />
+        <item index="1" class="java.lang.String" itemvalue="Jest.### Reducer | auth - Tests.&gt;&gt;&gt; VALIDATE_TOKEN_START: should return current state" />
+        <item index="2" class="java.lang.String" itemvalue="Jest.### Reducer | auth - Tests" />
+        <item index="3" class="java.lang.String" itemvalue="Jest.### Reducer | auth - Tests.&gt;&gt;&gt; should return the initial state" />
+        <item index="4" class="java.lang.String" itemvalue="Jest.### Layout tests.&gt;&gt; renders without crashing when not logged in" />
       </list>
     </recent_temporary>
   </component>
@@ -568,7 +555,8 @@
       <workItem from="1516016951050" duration="11375000" />
       <workItem from="1516086024277" duration="28024000" />
       <workItem from="1516172594538" duration="7989000" />
-      <workItem from="1516181963744" duration="21912000" />
+      <workItem from="1516181963744" duration="21982000" />
+      <workItem from="1516258891681" duration="9502000" />
     </task>
     <task id="LOCAL-00001" summary="add dependencies">
       <created>1513595069420</created>
@@ -752,46 +740,53 @@
       <option name="project" value="LOCAL" />
       <updated>1516176374404</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="validate token; fix tests after refactoring">
+      <created>1516205072715</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1516205072715</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="###_Actions___Auth_-_Tests - 2018.01.17 at 17h 25m 33s.xml">
-      <configuration name="### Actions | Auth - Tests" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="###_Layout_tests____clicking_on_SignOut_btn_calls_proper_func - 2018.01.18 at 14h 08m 15s.xml">
+      <configuration name="### Layout tests.&gt;&gt; clicking on SignOut btn calls proper func" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="###_Actions___Auth_-_Tests_____userSignOut - 2018.01.17 at 17h 44m 31s.xml">
-      <configuration name="### Actions | Auth - Tests.&gt;&gt;&gt; userSignOut" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="###_Layout_tests____clicking_on_SignOut_btn_calls_proper_func - 2018.01.18 at 14h 08m 23s.xml">
+      <configuration name="### Layout tests.&gt;&gt; clicking on SignOut btn calls proper func" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="###_Actions___Lists_-_Tests - 2018.01.17 at 17h 23m 30s.xml">
-      <configuration name="### Actions | Lists - Tests" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="###_Layout_tests____clicking_on_SignOut_btn_calls_proper_func - 2018.01.18 at 14h 08m 33s.xml">
+      <configuration name="### Layout tests.&gt;&gt; clicking on SignOut btn calls proper func" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="###_Actions___Lists_-_Tests_____fetchLists - 2018.01.17 at 17h 11m 38s.xml">
-      <configuration name="### Actions | Lists - Tests.&gt;&gt;&gt; fetchLists" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="###_Layout_tests____renders_without_crashing_when_not_logged_in - 2018.01.18 at 14h 08m 38s.xml">
+      <configuration name="### Layout tests.&gt;&gt; renders without crashing when not logged in" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="###_Actions___Lists_-_Tests_____fetchLists - 2018.01.17 at 17h 12m 35s.xml">
-      <configuration name="### Actions | Lists - Tests.&gt;&gt;&gt; fetchLists" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="###_Layout_tests____renders_without_crashing_when_not_logged_in - 2018.01.18 at 14h 09m 01s.xml">
+      <configuration name="### Layout tests.&gt;&gt; renders without crashing when not logged in" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="###_Actions___Tasks_-_Tests - 2018.01.17 at 17h 24m 29s.xml">
-      <configuration name="### Actions | Tasks - Tests" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="###_Reducer___auth_-_Tests - 2018.01.18 at 14h 09m 50s.xml">
+      <configuration name="### Reducer | auth - Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="###_Actions___Tasks_-_Tests - 2018.01.17 at 17h 25m 02s.xml">
-      <configuration name="### Actions | Tasks - Tests" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="###_Reducer___auth_-_Tests - 2018.01.18 at 14h 11m 19s.xml">
+      <configuration name="### Reducer | auth - Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="###_Actions___Tasks_-_Tests - 2018.01.17 at 17h 25m 22s.xml">
-      <configuration name="### Actions | Tasks - Tests" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="###_Reducer___auth_-_Tests_____VALIDATE_TOKEN_START__should_return_current_state - 2018.01.18 at 14h 25m 19s.xml">
+      <configuration name="### Reducer | auth - Tests.&gt;&gt;&gt; VALIDATE_TOKEN_START: should return current state" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="actions_test_js - 2018.01.17 at 17h 10m 55s.xml">
-      <configuration name="actions.test.js" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="###_Reducer___auth_-_Tests_____handle_VALIDATE_TOKEN_SUCCESS - 2018.01.18 at 14h 27m 48s.xml">
+      <configuration name="### Reducer | auth - Tests.&gt;&gt;&gt; handle VALIDATE_TOKEN_SUCCESS" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="reducers_tests_js - 2018.01.17 at 17h 10m 49s.xml">
-      <configuration name="reducers.tests.js" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="###_Reducer___auth_-_Tests_____should_return_the_initial_state - 2018.01.18 at 14h 11m 15s.xml">
+      <configuration name="### Reducer | auth - Tests.&gt;&gt;&gt; should return the initial state" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="429010000" />
+    <option name="totallyTimeSpent" value="438582000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="124" y="81" width="1857" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15148248" sideWeight="0.49456522" order="2" side_tool="false" content_ui="tabs" />
@@ -801,9 +796,9 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30080864" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328807" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3326713" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3326713" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22045681" sideWeight="0.49811321" order="10" side_tool="false" content_ui="tabs" x="65" y="324" width="1855" height="421" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27507448" sideWeight="0.49811321" order="10" side_tool="false" content_ui="tabs" x="65" y="324" width="1855" height="421" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17574124" sideWeight="0.5054348" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39961204" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -823,8 +818,8 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16385303" sideWeight="0.5018868" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328807" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297769" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28599802" sideWeight="0.49811321" order="10" side_tool="false" content_ui="tabs" x="65" y="324" width="1855" height="421" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3326713" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22045681" sideWeight="0.49811321" order="10" side_tool="false" content_ui="tabs" x="65" y="324" width="1855" height="421" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15148248" sideWeight="0.49456522" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -879,7 +874,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add layout, reducers, tasklists component; change react-router version 4.0.2=&gt;3.0.5" />
     <MESSAGE value="delete standart react-App files; add link to bootstrap" />
     <MESSAGE value="add getting tasklists from backend" />
     <MESSAGE value="save progress" />
@@ -904,7 +898,8 @@
     <MESSAGE value="reducers tests - in progress" />
     <MESSAGE value="tests are finished. Authorization with 'onEnter' attribute" />
     <MESSAGE value="AuthWrapper is deleted. Added 'onEnter' attr for 'sign_in'/'sign_up' routes." />
-    <option name="LAST_COMMIT_MESSAGE" value="AuthWrapper is deleted. Added 'onEnter' attr for 'sign_in'/'sign_up' routes." />
+    <MESSAGE value="validate token; fix tests after refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="validate token; fix tests after refactoring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1162,16 +1157,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#37#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/authenticatedWrapper/index.js" />
     <entry file="file://$PROJECT_DIR$/src/actionTypes.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -1185,22 +1170,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="31" column="51" lean-forward="false" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/api/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="847">
-          <caret line="106" column="1" lean-forward="false" selection-start-line="106" selection-start-column="1" selection-end-line="106" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cookies.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -1224,45 +1193,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/__mock-data__/auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/__tests__/layout.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="63" lean-forward="false" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-            <element signature="e#327#561#0" expanded="false" />
-            <element signature="e#638#1073#0" expanded="false" />
-            <element signature="e#1154#1657#0" expanded="false" />
-            <element signature="e#1722#2283#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/layout/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/__tests__/listHeader.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1276,132 +1210,154 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
+    <entry file="file://$PROJECT_DIR$/src/components/signIn/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#24#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="558">
+          <caret line="39" column="22" lean-forward="false" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/__tests__/reducers.tests.js">
+    <entry file="file://$PROJECT_DIR$/src/api/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="93" column="13" lean-forward="false" selection-start-line="93" selection-start-column="13" selection-end-line="93" selection-end-column="13" />
-          <folding>
-            <element signature="e#527#1196#0" expanded="false" />
-            <element signature="e#1252#1889#0" expanded="false" />
-            <element signature="e#1691#1885#0" expanded="false" />
-            <element signature="e#2026#2190#0" expanded="false" />
-            <element signature="e#3354#3973#0" expanded="false" />
-            <element signature="e#4029#5558#0" expanded="false" />
-            <element signature="e#4116#4173#0" expanded="false" />
-            <element signature="e#4244#4440#0" expanded="false" />
-            <element signature="e#4515#4723#0" expanded="false" />
-            <element signature="e#4794#4990#0" expanded="false" />
-            <element signature="e#5065#5282#0" expanded="false" />
-            <element signature="e#5333#5553#0" expanded="false" />
-            <element signature="e#5696#5753#0" expanded="false" />
-            <element signature="e#5829#6030#0" expanded="false" />
-            <element signature="e#6110#6355#0" expanded="false" />
-            <element signature="e#6426#6622#0" expanded="false" />
-            <element signature="e#6693#6910#0" expanded="false" />
-            <element signature="e#6961#7181#0" expanded="false" />
-            <element signature="e#7244#7492#0" expanded="false" />
-            <element signature="e#7548#7795#0" expanded="false" />
-            <element signature="e#7853#8106#0" expanded="false" />
-            <element signature="e#8159#8360#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="936">
-          <caret line="52" column="13" lean-forward="true" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#74#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/__tests__/actions.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="538" column="39" lean-forward="false" selection-start-line="538" selection-start-column="39" selection-end-line="538" selection-end-column="39" />
-          <folding>
-            <element signature="e#1752#6598#0" expanded="false" />
-            <element signature="e#2334#2738#0" expanded="false" />
-            <element signature="e#2790#3239#0" expanded="false" />
-            <element signature="e#3716#4144#0" expanded="false" />
-            <element signature="e#4636#5070#0" expanded="false" />
-            <element signature="e#5122#5495#0" expanded="false" />
-            <element signature="e#6313#6594#0" expanded="false" />
-            <element signature="e#6649#13086#0" expanded="false" />
-            <element signature="e#6818#7210#0" expanded="false" />
-            <element signature="e#7258#7695#0" expanded="false" />
-            <element signature="e#7747#8140#0" expanded="false" />
-            <element signature="e#8188#8625#0" expanded="false" />
-            <element signature="e#8677#9052#0" expanded="false" />
-            <element signature="e#9100#9526#0" expanded="false" />
-            <element signature="e#9584#9998#0" expanded="false" />
-            <element signature="e#10052#10505#0" expanded="false" />
-            <element signature="e#10561#10964#0" expanded="false" />
-            <element signature="e#11016#11465#0" expanded="false" />
-            <element signature="e#11523#11936#0" expanded="false" />
-            <element signature="e#11990#12449#0" expanded="false" />
-            <element signature="e#12489#12754#0" expanded="false" />
-            <element signature="e#12795#13082#0" expanded="false" />
-            <element signature="e#13305#13700#0" expanded="false" />
-            <element signature="e#13748#14184#0" expanded="false" />
-            <element signature="e#14240#14629#0" expanded="false" />
-            <element signature="e#14677#15107#0" expanded="false" />
-            <element signature="e#15150#15532#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="775">
+          <caret line="102" column="18" lean-forward="false" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/selectors.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
-          <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+          <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cookies.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="32" column="30" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/actions/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="378" column="36" lean-forward="false" selection-start-line="378" selection-start-column="36" selection-end-line="378" selection-end-column="36" />
+        <state relative-caret-position="351">
+          <caret line="395" column="5" lean-forward="false" selection-start-line="395" selection-start-column="5" selection-end-line="395" selection-end-column="5" />
           <folding>
-            <element signature="e#0#43#0" expanded="true" />
+            <element signature="e#0#43#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/tasklists/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="31" column="16" lean-forward="true" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+        <state relative-caret-position="235">
+          <caret line="44" column="16" lean-forward="false" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
           <folding>
-            <element signature="e#0#38#0" expanded="true" />
-            <marker date="1516204510363" expanded="true" signature="809:979" ph="..." />
-            <marker date="1516204510363" expanded="true" signature="853:973" ph="..." />
-            <marker date="1516204510363" expanded="true" signature="1081:1659" ph="..." />
-            <marker date="1516204510363" expanded="true" signature="1138:1200" ph="..." />
-            <marker date="1516204510363" expanded="true" signature="1334:1640" ph="..." />
-            <marker date="1516204510363" expanded="true" signature="1363:1515" ph="..." />
+            <element signature="e#0#38#0" expanded="false" />
+            <marker date="1516275666308" expanded="true" signature="809:979" ph="..." />
+            <marker date="1516275666308" expanded="true" signature="853:973" ph="..." />
+            <marker date="1516275666308" expanded="true" signature="1081:1659" ph="..." />
+            <marker date="1516275666308" expanded="true" signature="1138:1200" ph="..." />
+            <marker date="1516275666308" expanded="true" signature="1334:1640" ph="..." />
+            <marker date="1516275666308" expanded="true" signature="1363:1515" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/signIn/index.js">
+    <entry file="file://$PROJECT_DIR$/src/__tests__/actions.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="39" column="22" lean-forward="true" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+        <state relative-caret-position="713">
+          <caret line="538" column="39" lean-forward="false" selection-start-line="538" selection-start-column="39" selection-end-line="538" selection-end-column="39" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__tests__/layout.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="18" column="55" lean-forward="false" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
+          <folding>
+            <element signature="e#696#1169#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__mock-data__/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__tests__/reducers.tests.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="106" column="7" lean-forward="false" selection-start-line="106" selection-start-column="7" selection-end-line="106" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+            <element signature="e#580#1249#0" expanded="false" />
+            <element signature="e#1305#1942#0" expanded="false" />
+            <element signature="e#1744#1938#0" expanded="false" />
+            <element signature="e#4778#6307#0" expanded="false" />
+            <element signature="e#4865#4922#0" expanded="false" />
+            <element signature="e#4993#5189#0" expanded="false" />
+            <element signature="e#5264#5472#0" expanded="false" />
+            <element signature="e#5543#5739#0" expanded="false" />
+            <element signature="e#5814#6031#0" expanded="false" />
+            <element signature="e#6082#6302#0" expanded="false" />
+            <element signature="e#6358#9113#0" expanded="false" />
+            <element signature="e#6445#6502#0" expanded="false" />
+            <element signature="e#6578#6779#0" expanded="false" />
+            <element signature="e#6859#7104#0" expanded="false" />
+            <element signature="e#7175#7371#0" expanded="false" />
+            <element signature="e#7442#7659#0" expanded="false" />
+            <element signature="e#7710#7930#0" expanded="false" />
+            <element signature="e#7993#8241#0" expanded="false" />
+            <element signature="e#8297#8544#0" expanded="false" />
+            <element signature="e#8602#8855#0" expanded="false" />
+            <element signature="e#8908#9109#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="32" column="50" lean-forward="false" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/layout/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="44" column="94" lean-forward="false" selection-start-line="44" selection-start-column="86" selection-end-line="44" selection-end-column="94" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="42" column="35" lean-forward="true" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

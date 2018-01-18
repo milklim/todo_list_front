@@ -16,6 +16,7 @@ describe('### Layout tests', () => {
         const validateToken = jest.fn();
         component = shallow(
                 <Layout
+                    authInfo = {{tokenValidating: false}}
                     validateToken = { validateToken }
                 />
             );
@@ -26,7 +27,7 @@ describe('### Layout tests', () => {
         const validateToken = jest.fn();
         component = shallow(
             <Layout
-                isLoggedIn = { false }
+                authInfo = {{tokenValidating: false, isAuthenticate: false}}
                 validateToken = { validateToken }
             />
         );
@@ -42,8 +43,7 @@ describe('### Layout tests', () => {
         const validateToken = jest.fn();
         component = shallow(
             <Layout
-                isLoggedIn = { true }
-                userName = { usrName }
+                authInfo = {{tokenValidating: false, isAuthenticate: true, userName: usrName}}
                 validateToken = { validateToken }
             />
         )
@@ -62,8 +62,7 @@ describe('### Layout tests', () => {
 
         component = shallow(
             <Layout
-                isLoggedIn = { true }
-                userName = { usrName }
+                authInfo = {{tokenValidating: false, isAuthenticate: true, userName: usrName}}
                 userSignOut = { signOut }
                 validateToken = { validateToken }
             />
