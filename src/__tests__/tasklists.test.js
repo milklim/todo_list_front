@@ -26,6 +26,7 @@ describe('### Tasklists tests', () => {
         component = shallow(
             <Tasklists
                 lists = { lists }
+                authInfo = { {isAuthenticate: true} }
                 fetchLists = { fetchLists }
                 createList = { createList }
             />

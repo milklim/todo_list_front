@@ -14,10 +14,13 @@ describe('### Layout tests', () => {
 
     it('>> renders without crashing when not logged in', () => {
         const validateToken = jest.fn();
+        const resetTokenValidation = jest.fn();
+
         component = shallow(
                 <Layout
                     authInfo = {{tokenValidating: false}}
                     validateToken = { validateToken }
+                    resetTokenValidation = { resetTokenValidation }
                 />
             );
         expect(component).toMatchSnapshot();
@@ -25,10 +28,14 @@ describe('### Layout tests', () => {
 
     it('>> if user is not logged in, renders SignIn/SignUp links', () => {
         const validateToken = jest.fn();
+        const resetTokenValidation = jest.fn();
+
         component = shallow(
             <Layout
                 authInfo = {{tokenValidating: false, isAuthenticate: false}}
                 validateToken = { validateToken }
+                resetTokenValidation = { resetTokenValidation }
+
             />
         );
 
@@ -41,10 +48,13 @@ describe('### Layout tests', () => {
     it('>> if user is logged in, renders user Email and SignOut btn ', () => {
         const usrName = 'mail@i.ua';
         const validateToken = jest.fn();
+        const resetTokenValidation = jest.fn();
+
         component = shallow(
             <Layout
                 authInfo = {{tokenValidating: false, isAuthenticate: true, userName: usrName}}
                 validateToken = { validateToken }
+                resetTokenValidation = { resetTokenValidation }
             />
         )
 
@@ -59,12 +69,14 @@ describe('### Layout tests', () => {
         const usrName = 'mail@i.ua';
         const signOut = jest.fn();
         const validateToken = jest.fn();
+        const resetTokenValidation = jest.fn();
 
         component = shallow(
             <Layout
                 authInfo = {{tokenValidating: false, isAuthenticate: true, userName: usrName}}
                 userSignOut = { signOut }
                 validateToken = { validateToken }
+                resetTokenValidation = { resetTokenValidation }
             />
         );
 
@@ -72,7 +84,24 @@ describe('### Layout tests', () => {
         btnSignOut.simulate('click');
 
         expect(signOut).toHaveBeenCalled();
-        expect(validateToken).toHaveBeenCalled();
+        expect(resetTokenValidation).toHaveBeenCalled();
+    });
+
+    it('>> show spinner when token is validated', () => {
+        const validateToken = jest.fn();
+        const resetTokenValidation = jest.fn();
+
+        component = shallow(
+            <Layout
+                authInfo = {{tokenValidating: true, isAuthenticate: false, userName: ''}}
+                validateToken = { validateToken }
+                resetTokenValidation = { resetTokenValidation }
+            />
+        );
+
+        const spinerTag = component.find('#spiner');
+
+        expect(spinerTag).toHaveLength(1);
     });
 
 

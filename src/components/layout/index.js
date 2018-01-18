@@ -39,7 +39,7 @@ export class Layout extends Component {
     }
     render() {
         if (this.props.authInfo.tokenValidating)
-            return <div>Loading...</div>
+            return <div id='spiner'>Loading...</div>
         else return (
             <div className="w3-content">
 

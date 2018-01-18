@@ -144,6 +144,7 @@ describe('### Reducer | auth - Tests', () => {
     it('>>> handle USER_SIGN_UP_FAILURE, USER_SIGN_IN_FAILURE, USER_SIGN_OUT_SUCCESS', () => {
         state = {
             isAuthenticate:  false,
+            tokenValidating: false,
             userName:  'Not logged in'
         };
         action = {
