@@ -54,10 +54,11 @@ export class Tasklists extends Component {
 
                 <div className="w3-container w3-padding-16 w3-center">
                     <button
-                        className="w3-btn w3-round w3-ripple w3-flat-nephritis btn-new-list"
+                        className="w3-btn w3-large w3-round w3-ripple w3-flat-belize-hole btn-new-list"
                         onClick={this.createList.bind(this, 'New Tasklist')}
                     >
-                        Add List
+                        <i className="fa fa-plus"> </i>
+                        <b>Add TODO List</b>
                     </button>
                 </div>
             </div>

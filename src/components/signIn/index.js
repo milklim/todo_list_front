@@ -10,17 +10,6 @@ import {getAuthInfo} from "../../selectors";
 
 
 export class SignIn extends Component {
-    constructor(props){
-        super(props)
-        this.state = {'email': ''}
-        this.state = {'password': ''}
-
-        this.handleChangeEmail = this.handleChangeEmail.bind(this)
-        this.handleChangePass = this.handleChangePass.bind(this)
-    }
-
-    handleChangeEmail(event) { this.setState({email: event.target.value}) }
-    handleChangePass(event) { this.setState({password: event.target.value}) }
 
     componentWillReceiveProps(nextProps) {
         if (nextProps.authInfo.isAuthenticate)
@@ -32,7 +21,7 @@ export class SignIn extends Component {
     }
 
     signIn = (event) => {
-        this.props.userSignIn(this.state.email, this.state.password)
+        this.props.userSignIn(event.target[0].value, event.target[1].value)
         event.preventDefault()
     }
 
@@ -52,7 +41,6 @@ export class SignIn extends Component {
                         <input className="w3-input"
                                type="email"
                                onChange = { this.handleChangeEmail }
-                               value={this.state.email}
                         />
                     </p>
                     <p>
@@ -60,7 +48,6 @@ export class SignIn extends Component {
                         <input className="w3-input"
                                type="password"
                                onChange = { this.handleChangePass }
-                               value={this.state.password}
                         />
                     </p>
 

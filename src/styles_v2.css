@@ -5,6 +5,20 @@
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
 }
+
+.btn-new-list{
+    position: relative;
+}
+.btn-new-list > b{
+    padding-left: 35px;
+}
+.btn-new-list > i {
+    position: absolute;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #004d99;
+    top: 50%;
+}
 /* Header of the List */
 .lst-header {
     padding-top: 8px;
@@ -133,6 +147,9 @@
 .line-through-text {
     text-decoration: line-through;
 }
+
+
+/* Registration/authorization forms */
 
 .sign-forms {
     width: 50%;
