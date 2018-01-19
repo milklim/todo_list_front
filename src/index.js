@@ -12,6 +12,7 @@ import Layout from './components/layout'
 import Tasklists from './components/tasklists'
 import SignUp from './components/signUp'
 import SignIn from './components/signIn'
+import NotFound from './components/notFound'
 
 
 const history = syncHistoryWithStore(browserHistory, store)
@@ -24,6 +25,7 @@ ReactDOM.render(
                 <Route path='/sign_in' component={SignIn} onEnter = { alreadyLogged }/>
                 <Route path='/' component={Tasklists} onEnter = { requireAuth }/>
             </Route>
+            <Route path="*" component={NotFound} />
         </Router>
     </Provider>,
     document.getElementById('root')

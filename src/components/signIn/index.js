@@ -22,7 +22,7 @@ export class SignIn extends Component {
     }
 
     signIn = (event) => {
-        this.props.userSignIn(event.target[0].value, event.target[1].value)
+        this.props.userSignIn(event.target.elements["email"].value, event.target.elements["password"].value)
         event.preventDefault()
     }
 
@@ -43,16 +43,18 @@ export class SignIn extends Component {
                         <label>E-mail</label>
                         <input className="w3-input"
                                type="email"
+                               name="email"
                                placeholder="Enter your email"
-                               onChange = { this.handleChangeEmail }
+                               // onChange = { this.handleChangeEmail }
                         />
                     </p>
                     <p>
                         <label>Password</label>
                         <input className="w3-input"
                                type="password"
+                               name="password"
                                placeholder="Password: 8 chars minimum"
-                               onChange = { this.handleChangePass }
+                               // onChange = { this.handleChangePass }
                         />
                     </p>
 

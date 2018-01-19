@@ -1,4 +1,6 @@
 import * as act from '../actionTypes';
+import { LOCATION_CHANGE } from 'react-router-redux';
+
 import * as lstMock from '../__mock-data__/lists';
 import * as tskMock from "../__mock-data__/tasks";
 import {signUpResponse, signInResponse, mockAuthCookies} from "../__mock-data__/auth";
@@ -8,8 +10,8 @@ import editedTask from "../reducers/editedTask";
 import auth from "../reducers/auth";
 import lists from '../reducers/lists';
 import tasks from '../reducers/tasks';
-import combineReducers from '../reducers/index';
 import {VALIDATE_TOKEN_START} from "../actionTypes";
+import {RESET_TOKEN_VALIDATION} from "../actionTypes";
 jest.mock('../cookies');
 
 describe('### Reducer | editedList - Tests', () => {
@@ -79,7 +81,8 @@ describe('### Reducer | auth - Tests', () => {
         state = {
             isAuthenticate:  false,
             tokenValidating: true,
-            userName:  'Not logged in'
+            userName:  'Not logged in',
+            'isAuthErr': false
         };
         expect(auth(undefined, {})).toEqual(state);
     });
@@ -97,6 +100,7 @@ describe('### Reducer | auth - Tests', () => {
         state = {
             headers: mockAuthCookies,
             isAuthenticate:  true,
+            isAuthErr: false,
             tokenValidating: false,
             userName: mockAuthCookies.uid
         };
@@ -111,6 +115,7 @@ describe('### Reducer | auth - Tests', () => {
         state = {
             isAuthenticate: true ,
             userName: signUpResponse['uid'],
+            isAuthErr: false,
             headers: {
                 'access-token': signInResponse['access-token'],
                 'client': signInResponse['client'],
@@ -128,6 +133,7 @@ describe('### Reducer | auth - Tests', () => {
         state = {
             isAuthenticate: true ,
             userName: signInResponse['uid'],
+            isAuthErr: false,
             headers: {
                 'access-token': signInResponse['access-token'],
                 'client': signInResponse['client'],
@@ -146,7 +152,8 @@ describe('### Reducer | auth - Tests', () => {
         state = {
             isAuthenticate:  false,
             tokenValidating: false,
-            userName:  'Not logged in'
+            userName:  'Not logged in',
+            isAuthErr: true
         };
         action = {
             type: act.USER_SIGN_UP_FAILURE,
@@ -160,12 +167,79 @@ describe('### Reducer | auth - Tests', () => {
         }
         expect(auth("whatever_state", action)).toEqual(state);
 
+    });
+
+    it('>>> handle USER_SIGN_OUT_SUCCESS', () => {
+        state = {
+            isAuthenticate:  false,
+            tokenValidating: false,
+            userName:  'Not logged in',
+            isAuthErr: false
+        };
+
         action = {
             type: act.USER_SIGN_OUT_SUCCESS,
             payload: "whatever"
         }
         expect(auth("whatever_state", action)).toEqual(state);
 
+    });
+
+    it('>>> handle LOCATION_CHANGE (isAuthErr: true) - reset isAuthErr attr if location was changed', () => {
+        state = {
+            isAuthenticate:  false,
+            tokenValidating: false,
+            userName:  'Not logged in',
+            isAuthErr: true
+        };
+        const newState = {
+            isAuthenticate:  false,
+            tokenValidating: false,
+            userName:  'Not logged in',
+            isAuthErr: false
+        }
+
+        action = {
+            type: LOCATION_CHANGE,
+            payload: "whatever"
+        }
+        expect(auth(state, action)).toEqual(newState);
+    });
+
+    it('>>> handle LOCATION_CHANGE (isAuthErr: false) - reset isAuthErr attr if location was changed', () => {
+        state = {
+            isAuthenticate:  false,
+            tokenValidating: false,
+            userName:  'Not logged in',
+            isAuthErr: false
+        };
+        const newState = {
+            isAuthenticate:  false,
+            tokenValidating: false,
+            userName:  'Not logged in',
+            isAuthErr: false
+        }
+
+        action = {
+            type: LOCATION_CHANGE,
+            payload: "whatever"
+        }
+        expect(auth(state, action)).toEqual(newState);
+    });
+
+    it('>>> handle RESET_TOKEN_VALIDATION ', () => {
+        state = {
+            'isAuthenticate': false,
+            'tokenValidating': false,
+            'userName': 'Not logged in',
+            'isAuthErr': false
+        };
+
+        action = {
+            type: RESET_TOKEN_VALIDATION,
+            payload: "whatever"
+        }
+        expect(auth('any_state', action)).toEqual(state);
     });
 
 });

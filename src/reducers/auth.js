@@ -1,5 +1,6 @@
 import {getCookie, getAuthCookies} from "../cookies/index";
 
+import { LOCATION_CHANGE } from 'react-router-redux';
 import {
 USER_SIGN_UP_SUCCESS,
 USER_SIGN_UP_FAILURE,
@@ -13,11 +14,12 @@ RESET_TOKEN_VALIDATION,
 } from '../actionTypes'
 
 
+
 // const initialState = {
 //     'isAuthenticate': Cookie('uid') && Cookie('access-token') ? true : false,
 //     'userName': Cookie('uid') ? Cookie('uid') : 'Not logged in'
 // }
-const notLoggedName = 'Not logged in'
+const notLoggedName = 'Not logged in';
 
 const initialState = {
     'isAuthenticate': false,
@@ -39,7 +41,6 @@ export default (state = initialState, {type, payload}) => {
                     'client': payload['client'],
                     'uid': payload['uid']
                 }
-
             }
         case USER_SIGN_UP_FAILURE:
         case USER_SIGN_IN_FAILURE:
@@ -74,6 +75,10 @@ export default (state = initialState, {type, payload}) => {
                 'userName': notLoggedName,
                 'isAuthErr': false
             }
+        case LOCATION_CHANGE:
+            let currState = {...state};
+            currState.isAuthErr = false;
+            return currState;
         default:
             return state
     }

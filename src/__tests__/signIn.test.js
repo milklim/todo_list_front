@@ -29,28 +29,32 @@ describe('### SignIn Component tests', () => {
         expect(component).toMatchSnapshot();
     });
 
-    it('>> state has same values as in text Inputs', () => {
-        fillTxtInput('form input[type="email"]', email);
-        fillTxtInput('form input[type="password"]', pass);
-
-        expect(component.state().email).toEqual(email);
-        expect(component.state().password).toEqual(pass);
-    });
-
+    // it('>> state has same values as in text Inputs', () => {
+    //     fillTxtInput('form input[type="email"]', email);
+    //     fillTxtInput('form input[type="password"]', pass);
+    //
+    //     expect(component.state().email).toEqual(email);
+    //     expect(component.state().password).toEqual(pass);
+    // });
+    //
     it('>> form submitting calls userSignIn func with proper params', () => {
-        fillTxtInput('form input[type="email"]', email);
-        fillTxtInput('form input[type="password"]', pass);
+        // fillTxtInput('form input[type="email"]', email);
+        // fillTxtInput('form input[type="password"]', pass);
 
-        component.find('div.sign-forms > form').simulate('submit', {preventDefault() {}});
+        const elm = {
+            elements: { email: {value: email}, password: {value: pass} }
+        };
+
+        component.find('div.sign-forms > form').simulate('submit', {preventDefault() {}, target: elm});
         expect(userSignIn).toHaveBeenCalledWith(email, pass);
     });
 
-
-
-
-    function fillTxtInput(selector, value) {
-        const foundInput = component.find(selector);
-        foundInput.simulate('change', {target: {value: value}});
-        return foundInput;
-    }
+    //
+    //
+    //
+    // function fillTxtInput(selector, value) {
+    //     const foundInput = component.find(selector);
+    //     foundInput.simulate('change', {target: {value: value}});
+    //     return foundInput;
+    // }
 });
