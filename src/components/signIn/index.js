@@ -7,6 +7,7 @@ import {
 } from '../../actions'
 
 import {getAuthInfo} from "../../selectors";
+import classNames from "classnames/bind";
 
 
 export class SignIn extends Component {
@@ -32,7 +33,9 @@ export class SignIn extends Component {
                 <div className="w3-container w3-blue">
                     <h2>Sign In</h2>
                 </div>
-
+                <div className={ classNames("w3-red", "validation-err-wrap", {'sign-in-err': this.props.authInfo.isAuthErr}) }>
+                    Incorrect email or password
+                </div>
                 <form className="w3-container"
                       onSubmit={this.signIn.bind(this)}
                 >
@@ -40,6 +43,7 @@ export class SignIn extends Component {
                         <label>E-mail</label>
                         <input className="w3-input"
                                type="email"
+                               placeholder="Enter your email"
                                onChange = { this.handleChangeEmail }
                         />
                     </p>
@@ -47,6 +51,7 @@ export class SignIn extends Component {
                         <label>Password</label>
                         <input className="w3-input"
                                type="password"
+                               placeholder="Password: 8 chars minimum"
                                onChange = { this.handleChangePass }
                         />
                     </p>
@@ -61,7 +66,7 @@ export class SignIn extends Component {
 }
 const mapStateToProps = (state) => {
     return {
-        authInfo: getAuthInfo(state)
+        authInfo: getAuthInfo(state),
     }
 }
 const mapDispatchToProps = {

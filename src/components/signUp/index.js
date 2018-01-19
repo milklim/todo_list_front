@@ -6,6 +6,7 @@ import {
     userSignUp
 } from '../../actions'
 import {getAuthInfo} from '../../selectors'
+import classNames from "classnames/bind";
 
 export class SignUp extends Component {
     constructor(props){
@@ -45,6 +46,10 @@ export class SignUp extends Component {
                     <h2>Registration</h2>
                 </div>
 
+                <div className={ classNames("w3-red", "validation-err-wrap", {'sign-in-err': this.props.authInfo.isAuthErr}) }>
+                    Incorrect email or password
+                </div>
+
                 <form className="w3-container"
                       onSubmit={this.signUp.bind(this)}
                 >
@@ -52,6 +57,7 @@ export class SignUp extends Component {
                         <label>E-mail</label>
                         <input className="w3-input"
                                type="email"
+                               placeholder="Enter your email"
                                onChange = { this.handleChangeEmail }
                         />
                     </p>
@@ -59,13 +65,15 @@ export class SignUp extends Component {
                         <label>Password</label>
                         <input className="w3-input pass"
                                type="password"
+                               placeholder="Password: 8 chars minimum"
                                onChange = { this.handleChangePass }
                         />
                     </p>
                     <p>
-                        <label>Password confirm</label>
+                        <label>Confirm Password</label>
                         <input className="w3-input pass-confirm"
                                type="password"
+                               placeholder="Confirm Password"
                                onChange={ this.handleChangePassConf }
                         />
                     </p>

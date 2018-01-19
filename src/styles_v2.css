@@ -156,3 +156,10 @@
     margin-top: 5%;
     margin-left: 25%;
 }
+.sign-forms .validation-err-wrap {
+    visibility: hidden;
+}
+
+.sign-forms .sign-in-err {
+    visibility: visible;
+}

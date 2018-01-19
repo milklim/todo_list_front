@@ -22,7 +22,8 @@ const notLoggedName = 'Not logged in'
 const initialState = {
     'isAuthenticate': false,
     'tokenValidating': true,
-    'userName': notLoggedName
+    'userName': notLoggedName,
+    'isAuthErr': false
 }
 
 export default (state = initialState, {type, payload}) => {
@@ -32,6 +33,7 @@ export default (state = initialState, {type, payload}) => {
             return {
                 'isAuthenticate': true ,
                 'userName': payload['uid'],
+                'isAuthErr': false,
                 'headers': {
                     'access-token': payload['access-token'],
                     'client': payload['client'],
@@ -41,12 +43,19 @@ export default (state = initialState, {type, payload}) => {
             }
         case USER_SIGN_UP_FAILURE:
         case USER_SIGN_IN_FAILURE:
+            return {
+                'isAuthenticate': false,
+                'tokenValidating': false,
+                'userName': notLoggedName,
+                'isAuthErr': true
+            }
         case USER_SIGN_OUT_SUCCESS:
         case VALIDATE_TOKEN_FAILURE:
             return {
                 'isAuthenticate': false,
                 'tokenValidating': false,
-                'userName': notLoggedName
+                'userName': notLoggedName,
+                'isAuthErr': false
             }
         case VALIDATE_TOKEN_START:
             return state;
@@ -54,6 +63,7 @@ export default (state = initialState, {type, payload}) => {
             return {
                 'isAuthenticate': true,
                 'tokenValidating': false,
+                'isAuthErr': false,
                 'userName': getCookie('uid'),
                 'headers': getAuthCookies()
             }
@@ -61,7 +71,8 @@ export default (state = initialState, {type, payload}) => {
             return {
                 'isAuthenticate': false,
                 'tokenValidating': false,
-                'userName': notLoggedName
+                'userName': notLoggedName,
+                'isAuthErr': false
             }
         default:
             return state
