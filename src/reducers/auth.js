@@ -76,9 +76,7 @@ export default (state = initialState, {type, payload}) => {
                 'isAuthErr': false
             }
         case LOCATION_CHANGE:
-            let currState = {...state};
-            currState.isAuthErr = false;
-            return currState;
+            return {...state, isAuthErr: false};
         default:
             return state
     }

@@ -21,7 +21,7 @@ export class ListHeader extends Component {
 
     deleteList = (id) => this.props.deleteList(id)
 
-    onChangeName(event) {this.setState({'editingName': event.target.value})}
+    onChangeName(event) {this.setState({editingName: event.target.value})}
     editList = (list) => {
         this.props.onEditListStart(list)
         this.setState({'isEditing': true})
@@ -42,9 +42,7 @@ export class ListHeader extends Component {
 
 
     render(){
-        const list = this.props.list
-        const {editingList} = this.props
-
+        const {list, editingList} = this.props
         let editField = null
         if (this.state.isEditing) {
             editField =
@@ -67,23 +65,23 @@ export class ListHeader extends Component {
                     </div>
 
                     <div className="w3-container w3-cell w3-cell-left lst-title"
-                         onDoubleClick={this.editList.bind(this, list)}
-                    >
+                         onDoubleClick={this.editList.bind(this, list)}>
                         {renderName}
                     </div>
 
                     <div className="w3-container w3-cell w3-cell-middle w3-xlarge w3-hover-text-dark-grey lst-icon">
                         <i className="fa fa-pencil btn-edit"
-                           onClick={this.editList.bind(this, list)}
-                        > </i>
+                           onClick={this.editList.bind(this, list)}>
+                        </i>
                     </div>
                     <div className="w3-container w3-cell w3-cell-middle w3-padding w3-xlarge lst-icon-divider">
                         <i className="fa">|</i>
                     </div>
                     <div className="w3-container w3-cell w3-cell-middle w3-xlarge w3-hover-text-deep-orange lst-icon">
                         <i className="fa fa-trash-o btn-delete"
-                           onClick={this.deleteList.bind(this, list.id)}
-                        > </i>
+                           onClick={this.deleteList.bind(this, list.id)}>
+
+                        </i>
                     </div>
 
                 </div>

@@ -31,7 +31,5 @@ export const removeAuthCookies = () => {
 }
 
 export const isAuthCookieExist = () => {
-    if (Cookies.get('uid') && Cookies.get('access-token'))
-        return true
-    return false
+    return (Cookies.get('uid') && Cookies.get('access-token'));
 }

@@ -73,6 +73,8 @@ import {
     validateToken as validateTokenApi,
 } from '../api'
 
+import { replace } from 'react-router-redux';
+
 
 export const fetchLists = () => async (dispatch, getState) => {
     dispatch({type: FETCH_LISTS_START})
@@ -349,11 +351,12 @@ export const userSignIn = (email, pass) => async (dispatch) => {
     dispatch({type: USER_SIGN_IN_START})
 
     try {
-        const response = await signInApi(email, pass)
+        const response = await signInApi(email, pass);
         dispatch({
             type: USER_SIGN_IN_SUCCESS,
             payload: response //headers
-        })
+        });
+        dispatch(replace('/'));
     } catch (err) {
         // console.log('catch', err)
         dispatch({
@@ -373,7 +376,8 @@ export const userSignOut = () => async (dispatch, getState) => {
         dispatch({
             type: USER_SIGN_OUT_SUCCESS,
             payload: response //headers
-        })
+        });
+        dispatch(replace('/sign_in'));
         // browserHistory.replace("/sign_in")
     } catch (err) {
         // console.log('catch', err)

@@ -19,15 +19,14 @@ export default (state = initialState, {type, payload}) => {
         case TASK_DELETE_SUCCESS:
             return state.filter(t => t.id !== payload.id)
         case TASK_TOGGLE_DONE_STATUS_SUCCESS:
-            const withoutPayload = state.filter(t => t.id !== payload.id)
-            return [...withoutPayload, payload]
+            return state.filter(t => t.id !== payload.id ? t : payload);
         case TASK_POSITION_UP_SUCCESS:
         case TASK_POSITION_DOWN_SUCCESS:
-            const listId = payload[0].list_id
-            const withoutListId = state.filter(t => t.list_id !== listId)
+            const listId = payload[0].list_id;
+            const withoutListId = state.filter(t => t.list_id !== listId);
             return [...withoutListId, ...payload]
         case USER_SIGN_OUT_SUCCESS:
-            return []
+            return initialState;
         default:
             return state 
     }

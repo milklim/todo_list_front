@@ -164,4 +164,5 @@
 
 .sign-forms .sign-in-err {
     visibility: visible;
+    color: red;
 }

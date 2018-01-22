@@ -12,15 +12,6 @@ import classNames from "classnames/bind";
 
 export class SignIn extends Component {
 
-    componentWillReceiveProps(nextProps) {
-        if (nextProps.authInfo.isAuthenticate)
-            browserHistory.replace('/')
-    }
-    componentWillMount(){
-        if (this.props.authInfo.isAuthenticate)
-            browserHistory.replace('/')
-    }
-
     signIn = (event) => {
         this.props.userSignIn(event.target.elements["email"].value, event.target.elements["password"].value)
         event.preventDefault()

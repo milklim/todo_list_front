@@ -9,9 +9,9 @@ const initialState = {}
 export default (state = initialState, {type, payload}) => {
     switch (type) {
         case LIST_EDIT_START:
-            return payload
+            return payload;
         case LIST_EDIT_FINISH:
-            return {}
+            return initialState;
         default:
             return state
     }

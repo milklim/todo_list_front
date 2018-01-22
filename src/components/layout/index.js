@@ -17,10 +17,11 @@ import {
 export class Layout extends Component {
 
     componentWillMount(){
-        if(isAuthCookieExist())
+        if(isAuthCookieExist()) {
             this.props.validateToken();
-        else
+        } else {
             this.props.resetTokenValidation();
+        }
     }
 
     renderSignBtns = () => {
@@ -42,14 +43,10 @@ export class Layout extends Component {
             return <div className='loader w3-center'>Loading...</div>
         else return (
             <div className="w3-content">
-
                 <div className="w3-bar w3-border w3-light-grey ">
                     <span className="w3-bar-item usr-name">User: {this.props.authInfo.userName}</span>
-
                     {this.renderSignBtns()}
-
                 </div>
-
                 {this.props.children}
             </div>
         )
